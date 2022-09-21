@@ -1,0 +1,963 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Kiranime\n"
+"POT-Creation-Date: 2022-05-21 02:28+0700\n"
+"PO-Revision-Date: 2022-05-13 23:21+0700\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: 404.php:8
+msgid "Sorry, the page you are looking for could not be found."
+msgstr ""
+
+#: 404.php:10
+msgid "Go Home"
+msgstr ""
+
+#: comments.php:35
+#, php-format
+msgctxt "comments title"
+msgid "One comment"
+msgid_plural "%1$s comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:62
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:66
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: comments.php:72
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: comments.php:81
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:84
+msgid "Leave a reply"
+msgstr ""
+
+#: comments.php:87
+msgid "logged in"
+msgstr ""
+
+#: comments.php:88
+#, php-format
+msgid "You must be %1$s to post a comment"
+msgstr ""
+
+#: core/class/class-anime.php:215
+msgid "Imported 0 anime to your watch list."
+msgstr ""
+
+#: core/class/class-anime.php:249
+#, php-format
+msgid "Imported %1$s anime to your watch list."
+msgstr ""
+
+#: core/class/class-user.php:26
+msgid "Wrong username or password."
+msgstr ""
+
+#: core/class/class-user.php:29
+msgid "Login successful, redirecting..."
+msgstr ""
+
+#: core/class/class-user.php:40
+msgid "Username not allowed!"
+msgstr ""
+
+#: core/class/class-user.php:44
+msgid "Username or Email already exist!"
+msgstr ""
+
+#: core/class/class-user.php:55
+msgid "Register successful."
+msgstr ""
+
+#: core/class/class-user.php:157
+msgid "error uploading image"
+msgstr ""
+
+#: core/class/class-user.php:165
+msgid "error set image."
+msgstr ""
+
+#: core/class/class-user.php:168
+msgid "Set image success!"
+msgstr ""
+
+#: core/class/class-utility.php:234
+msgid "- Show Less"
+msgstr ""
+
+#: core/class/class-utility.php:235
+msgid "+ Show More"
+msgstr ""
+
+#: core/class/class-utility.php:236
+msgid "Loading..."
+msgstr ""
+
+#: core/class/class-utility.php:237
+#: template-parts/component/overlay-login.php:13
+msgid "Log Me In"
+msgstr ""
+
+#: core/class/class-utility.php:238
+msgid "Password not match!"
+msgstr ""
+
+#: core/class/class-utility.php:239
+msgid "Something went wrong.."
+msgstr ""
+
+#: core/class/class-utility.php:240
+msgid "Register"
+msgstr ""
+
+#: core/class/class-utility.php:241
+msgid "Register successful!"
+msgstr ""
+
+#: core/class/class-utility.php:242
+msgid "Logging in..!"
+msgstr ""
+
+#: core/class/class-utility.php:243
+msgid "Reloading.."
+msgstr ""
+
+#: core/class/class-utility.php:244
+msgid "${1} - Episode ${2} Available NOW!"
+msgstr ""
+
+#: core/class/class-utility.php:245
+msgid "Anime added to watchlist."
+msgstr ""
+
+#: core/class/class-utility.php:246
+msgid "Error adding anime to watchlist."
+msgstr ""
+
+#: core/class/class-utility.php:247
+msgid "Setting has been saved."
+msgstr ""
+
+#: core/class/class-utility.php:248
+msgid "Logout success, reloading!"
+msgstr ""
+
+#: core/class/class-utility.php:251
+msgid "Uploading..."
+msgstr ""
+
+#: core/class/class-utility.php:252
+msgid "Sorry, something is wrong."
+msgstr ""
+
+#: core/class/class-utility.php:253
+msgid "Avatar has been changed."
+msgstr ""
+
+#: core/class/class-utility.php:256
+msgid "Failed to connect to MyAnimeList."
+msgstr ""
+
+#: core/class/class-utility.php:257
+msgid "Please try again a few minutes."
+msgstr ""
+
+#: core/class/class-utility.php:258 core/class/class-utility.php:259
+msgid "Importing..."
+msgstr ""
+
+#: core/class/class-utility.php:262
+msgid "Failed to send your vote :("
+msgstr ""
+
+#: core/class/class-utility.php:263
+msgid "( ${1} Voted)"
+msgstr ""
+
+#: core/class/class-utility.php:264
+msgid "Vote success! :D"
+msgstr ""
+
+#: core/class/class-utility.php:267 pages/advanced-search.php:159
+#: pages/advanced-search.php:175 pages/advanced-search.php:192
+#: pages/advanced-search.php:219 search.php:157 search.php:173 search.php:188
+#: search.php:210
+msgid "All"
+msgstr "Todo"
+
+#: core/class/class-utility.php:268
+msgid "No Anime Found."
+msgstr "Anime no encontrado."
+
+#: core/class/class-utility.php:269
+msgid "Theater Mode"
+msgstr "Moto teatro"
+
+#: core/class/class-utility.php:270
+msgid "You're watching"
+msgstr "Estas viendo"
+
+#: core/class/class-utility.php:271
+msgid "Episode ${1}"
+msgstr "Episodio ${1}"
+
+#: core/class/class-utility.php:272
+msgid "If current player not working, select other server."
+msgstr ""
+
+#: core/class/class-utility.php:273
+msgid "SUB"
+msgstr ""
+
+#: core/class/class-utility.php:274
+msgid "DUB"
+msgstr ""
+
+#: core/class/class-utility.php:275
+msgid "Estimated the next episode will come at"
+msgstr ""
+
+#: core/class/class-utility.php:276 core/class/class-utility.php:277
+msgid "Anime has been removed."
+msgstr "Anime eliminado."
+
+#: core/class/class-utility.php:278
+msgid "Anime has been moved."
+msgstr "Anime movido."
+
+#: core/class/class-utility.php:279
+msgid "Error occured!"
+msgstr "Ha ocurrido un error!"
+
+#: core/class/class-utility.php:282
+msgid ""
+"millisecond:|s,second:|s,minute:|s,hour:|s,day:|s,week:|s,month:|s,year:|s"
+msgstr ""
+
+#: core/class/class-utility.php:283
+msgid ""
+"Jan:uary|,Feb:ruary|,Mar:ch|,Apr:il|,May,Jun:e|,Jul:y|,Aug:ust|,Sep:tember|"
+"t|,Oct:ober|,Nov:ember|,Dec:ember|"
+msgstr ""
+
+#: core/class/class-utility.php:284
+msgid ""
+"Sun:day|,Mon:day|,Tue:sday|,Wed:nesday|,Thu:rsday|,Fri:day|,Sat:urday|"
+"+weekend"
+msgstr ""
+
+#: core/class/class-utility.php:285
+msgid "en"
+msgstr ""
+
+#: core/class/class-utility.php:296
+msgid "spotlight"
+msgstr ""
+
+#: core/class/class-utility.php:297
+msgid "rate"
+msgstr ""
+
+#: core/class/class-utility.php:298
+msgid "native"
+msgstr ""
+
+#: core/class/class-utility.php:299
+msgid "synonyms"
+msgstr ""
+
+#: core/class/class-utility.php:300
+msgid "aired"
+msgstr ""
+
+#: core/class/class-utility.php:301
+msgid "premiered"
+msgstr ""
+
+#: core/class/class-utility.php:302
+msgid "duration"
+msgstr ""
+
+#: core/class/class-utility.php:303
+msgid "episodes"
+msgstr ""
+
+#: core/class/class-utility.php:304
+msgid "score"
+msgstr ""
+
+#: core/class/class-utility.php:305
+msgid "updated"
+msgstr ""
+
+#: core/class/class-utility.php:306
+#: template-parts/component/heading-site.php:149
+msgid "Profile"
+msgstr ""
+
+#: core/class/class-utility.php:307 core/kiranime-init.php:416
+#: template-parts/component/heading-site.php:156
+msgid "Continue Watching"
+msgstr ""
+
+#: core/class/class-utility.php:308
+msgid "Genres"
+msgstr ""
+
+#: core/class/class-utility.php:309 core/kiranime-init.php:417
+#: template-parts/component/heading-site.php:163
+msgid "Watch List"
+msgstr ""
+
+#: core/class/class-utility.php:310 core/kiranime-init.php:419
+#: template-parts/component/heading-site.php:170
+msgid "Notification"
+msgstr ""
+
+#: core/class/class-utility.php:311 core/kiranime-init.php:420
+#: template-parts/component/heading-site.php:177
+msgid "MAL Import"
+msgstr ""
+
+#: core/class/class-watchlist.php:37
+msgid "Already added!"
+msgstr ""
+
+#: core/class/class-watchlist.php:43
+msgid "Anime added to watch list!"
+msgstr ""
+
+#: core/class/class-watchlist.php:52
+#, php-format
+msgid "Anime has been moved to %1$s"
+msgstr ""
+
+#: core/class/class-watchlist.php:128
+msgid "Anime removed from watchlist!"
+msgstr ""
+
+#: core/class/class-watchlist.php:191
+msgid "Plan to Watch"
+msgstr ""
+
+#: core/class/class-watchlist.php:195
+msgid "Watching"
+msgstr ""
+
+#: core/class/class-watchlist.php:199
+msgid "On Hold"
+msgstr ""
+
+#: core/class/class-watchlist.php:203
+msgid "Completed"
+msgstr ""
+
+#: core/class/class-watchlist.php:207
+msgid "Dropped"
+msgstr ""
+
+#: core/class/class-watchlist.php:211
+msgid "Remove"
+msgstr ""
+
+#: core/configuration/comments.php:18
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: core/configuration/comments.php:30
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: core/kiranime-init.php:376
+msgid "Upcomming"
+msgstr ""
+
+#: core/kiranime-init.php:377
+msgid "Currently Airing"
+msgstr ""
+
+#: core/kiranime-init.php:378
+msgid "Finished Airing"
+msgstr ""
+
+#: core/kiranime-init.php:379
+msgid "Not Yet Aired"
+msgstr ""
+
+#: core/kiranime-init.php:387
+msgid "Series"
+msgstr ""
+
+#: core/kiranime-init.php:388
+msgid "Movie"
+msgstr ""
+
+#: core/kiranime-init.php:415
+msgid "My Profile"
+msgstr ""
+
+#: core/kiranime-init.php:418
+msgid "Setting"
+msgstr ""
+
+#: core/kiranime-init.php:421
+msgid "Recently Added Anime"
+msgstr ""
+
+#: core/kiranime-init.php:422 template-parts/display/list-upcomming.php:4
+msgid "Upcomming Anime"
+msgstr ""
+
+#: core/kiranime-init.php:423
+msgid "Latest Update Anime"
+msgstr ""
+
+#: core/kiranime-init.php:424
+msgid "Advanced Search"
+msgstr ""
+
+#: core/kiranime-init.php:425
+msgid "Top Currently Airing"
+msgstr ""
+
+#: core/kiranime-init.php:426
+msgid "Most Popular Anime"
+msgstr ""
+
+#: core/kiranime-init.php:427
+msgid "Most Favorite Anime"
+msgstr ""
+
+#: core/kiranime-init.php:428
+msgid "A-Z Anime List"
+msgstr ""
+
+#: core/kiranime-init.php:429 pages/az-list.php:24 pages/news.php:22
+#: template-parts/single/view-anime.php:44
+#: template-parts/single/view-episode.php:44
+#: template-parts/single/view-news.php:9
+msgid "Home"
+msgstr ""
+
+#: core/kiranime-init.php:430 pages/news.php:30
+#: template-parts/display/list-featured-news.php:2
+#: template-parts/single/view-news.php:17
+msgid "News"
+msgstr ""
+
+#: core/widget/most-popular.php:72 core/widget/popular-list.php:124
+msgid "New title"
+msgstr ""
+
+#: core/widget/most-popular.php:77 core/widget/popular-list.php:129
+msgid "Title:"
+msgstr ""
+
+#: core/widget/popular-list.php:43
+msgid "Today"
+msgstr ""
+
+#: core/widget/popular-list.php:47
+msgid "Week"
+msgstr ""
+
+#: core/widget/popular-list.php:51
+msgid "Month"
+msgstr ""
+
+#: core/widget/popular-list.php:91
+msgid "views"
+msgstr ""
+
+#: footer-landing.php:4
+msgid ""
+"All\n"
+"        rights reserved."
+msgstr ""
+
+#: footer.php:19
+msgid "Join Now"
+msgstr ""
+
+#: footer.php:44
+msgid "A-Z LIST"
+msgstr ""
+
+#: footer.php:45
+msgid "Searching anime order by alphabet name A to Z."
+msgstr ""
+
+#: footer.php:85
+#, php-format
+msgid ""
+"%1$s does not store any files on our server, we only linked to the media "
+"which is hosted on 3rd party services."
+msgstr ""
+
+#: header-single.php:55 header.php:50
+msgid "Close Menu"
+msgstr ""
+
+#: pages/advanced-search.php:124 search.php:124
+msgid "home"
+msgstr ""
+
+#: pages/advanced-search.php:132 search.php:132
+msgid "filter"
+msgstr ""
+
+#: pages/advanced-search.php:147 search.php:147
+msgid "Search title here.."
+msgstr ""
+
+#: pages/advanced-search.php:152
+msgid "Type"
+msgstr ""
+
+#: pages/advanced-search.php:169
+msgid "Status"
+msgstr ""
+
+#: pages/advanced-search.php:186 search.php:183
+msgid "Season"
+msgstr ""
+
+#: pages/advanced-search.php:213
+msgid "Year"
+msgstr ""
+
+#: pages/advanced-search.php:229
+msgid "Title ASC"
+msgstr ""
+
+#: pages/advanced-search.php:229
+msgid "Title DESC"
+msgstr ""
+
+#: pages/advanced-search.php:229
+msgid "Update"
+msgstr ""
+
+#: pages/advanced-search.php:229
+msgid "Published"
+msgstr ""
+
+#: pages/advanced-search.php:229
+msgid "Most Viewed"
+msgstr ""
+
+#: pages/advanced-search.php:231 search.php:222
+msgid "Sort by"
+msgstr ""
+
+#: pages/advanced-search.php:236 search.php:227
+msgid "Default"
+msgstr ""
+
+#: pages/advanced-search.php:245 search.php:236
+#: template-parts/component/list-genre.php:13
+msgid "Genre"
+msgstr ""
+
+#: pages/advanced-search.php:258 search.php:249
+msgid "Filter"
+msgstr ""
+
+#: pages/advanced-search.php:263 search.php:254
+msgid "Filter Results"
+msgstr ""
+
+#: pages/advanced-search.php:264 search.php:255
+#, php-format
+msgid "For <i>%1$s</i>"
+msgstr ""
+
+#: pages/advanced-search.php:267 search.php:258
+#, php-format
+msgid "%1$d Results"
+msgstr ""
+
+#: pages/anime-upcomming.php:21 pages/latest-update.php:20
+#: pages/most-favorite.php:20 pages/most-popular.php:20 pages/recent-add.php:20
+#: pages/top-airing.php:21 taxonomy.php:34
+#: template-parts/view/view-homepage.php:24
+#, php-format
+msgid "Share %1$s"
+msgstr ""
+
+#: pages/anime-upcomming.php:22 pages/latest-update.php:21
+#: pages/most-favorite.php:21 pages/most-popular.php:21 pages/recent-add.php:21
+#: pages/top-airing.php:22 template-parts/single/view-episode.php:228
+#: template-parts/view/view-homepage.php:27
+msgid "to your friends!"
+msgstr ""
+
+#: pages/az-list.php:32
+msgid "AZ-List"
+msgstr ""
+
+#: pages/az-list.php:40
+msgid "Sort By Letters"
+msgstr ""
+
+#: pages/az-list.php:69
+msgid "&laquo;"
+msgstr ""
+
+#: pages/az-list.php:70
+msgid "&raquo;"
+msgstr ""
+
+#: pages/notification.php:39
+#, php-format
+msgid "Episode %1$s Available NOW!"
+msgstr ""
+
+#: pages/notification.php:43
+msgid "here"
+msgstr ""
+
+#: pages/notification.php:44
+#, php-format
+msgid "Click %1$s to watch it now."
+msgstr ""
+
+#: pages/profile.php:34
+msgid "Username"
+msgstr ""
+
+#: pages/profile.php:50
+msgid "Joined"
+msgstr ""
+
+#: pages/profile.php:61
+msgid "Change Password"
+msgstr ""
+
+#: pages/profile.php:65
+msgid "Current Password"
+msgstr ""
+
+#: pages/profile.php:74
+msgid "New Password"
+msgstr ""
+
+#: pages/profile.php:78
+msgid "Your new password"
+msgstr ""
+
+#: pages/profile.php:82 pages/profile.php:87
+msgid "Confirm new password"
+msgstr ""
+
+#: pages/profile.php:91
+msgid "Save"
+msgstr ""
+
+#: pages/profile.php:114
+msgid "Choose Avatar"
+msgstr ""
+
+#: pages/profile.php:123
+msgid "Custom"
+msgstr ""
+
+#: pages/profile.php:155
+msgid "Upload your own avatar"
+msgstr ""
+
+#: pages/profile.php:164
+msgid "Upload"
+msgstr ""
+
+#: search.php:190
+msgid "Winter"
+msgstr ""
+
+#: search.php:193
+msgid "Spring"
+msgstr ""
+
+#: search.php:196
+msgid "Summer"
+msgstr ""
+
+#: search.php:200
+msgid "Fall"
+msgstr ""
+
+#: taxonomy.php:36
+msgid "to your friends"
+msgstr ""
+
+#: template-parts/anime-parts/component-characters.php:8
+msgid "Characters and Voice Actors"
+msgstr ""
+
+#: template-parts/anime-parts/component-characters.php:64
+msgid "Show All"
+msgstr ""
+
+#: template-parts/anime-parts/component-characters.php:76
+msgid "Close"
+msgstr ""
+
+#: template-parts/anime-parts/component-episodes.php:15
+msgid "Episodes"
+msgstr ""
+
+#: template-parts/anime-parts/component-seasons.php:19
+msgid "More Season"
+msgstr ""
+
+#: template-parts/anime-parts/component-seasons.php:33
+#, php-format
+msgid "%1$s"
+msgstr ""
+
+#: template-parts/component/heading-site.php:32
+#: template-parts/component/heading-site.php:211
+msgid "Search anime..."
+msgstr ""
+
+#: template-parts/component/heading-site.php:54
+#: template-parts/component/heading-site.php:226
+msgid "View all results"
+msgstr ""
+
+#: template-parts/component/heading-site.php:80
+msgid "Login"
+msgstr ""
+
+#: template-parts/component/heading-site.php:106
+msgid "Mark all as read"
+msgstr ""
+
+#: template-parts/component/heading-site.php:111
+msgid "View all"
+msgstr ""
+
+#: template-parts/component/heading-site.php:181
+msgid "Logout"
+msgstr ""
+
+#: template-parts/component/list-download.php:6
+msgid "Downloads"
+msgstr ""
+
+#: template-parts/component/list-download.php:42
+msgid "No Download available."
+msgstr ""
+
+#: template-parts/component/overlay-login.php:4
+msgid "Sign in to your Account"
+msgstr ""
+
+#: template-parts/component/overlay-login.php:17
+msgid "Don't have an account?"
+msgstr ""
+
+#: template-parts/component/overlay-login.php:18
+msgid "Sign up here"
+msgstr ""
+
+#: template-parts/component/overlay-register.php:5
+msgid "Register New Account"
+msgstr ""
+
+#: template-parts/component/overlay-register.php:20
+msgid "Sign up"
+msgstr ""
+
+#: template-parts/component/overlay-register.php:25
+msgid "Already have an account?"
+msgstr ""
+
+#: template-parts/component/overlay-register.php:27
+#: template-parts/component/overlay-register.php:33
+msgid "Log in here"
+msgstr ""
+
+#: template-parts/component/overlay-register.php:31
+msgid ""
+"Registration is currently disabled by Administrator. If\n"
+"        you already have an account"
+msgstr ""
+
+#: template-parts/content-single.php:15 template-parts/content.php:28
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/content-single.php:19 template-parts/content.php:32
+msgid "Page"
+msgstr ""
+
+#: template-parts/content.php:21
+#, php-format
+msgid "Continue reading %s"
+msgstr ""
+
+#: template-parts/display/list-featured-news.php:33
+#: template-parts/display/list-latest-anime.php:9
+#: template-parts/display/list-latest-episode.php:9
+#: template-parts/display/list-newly-added.php:9
+#: template-parts/display/list-upcomming.php:9
+#: template-parts/view/view-homepage.php:65
+#: template-parts/view/view-homepage.php:92
+#: template-parts/view/view-homepage.php:119
+msgid "View More"
+msgstr ""
+
+#: template-parts/display/list-featured.php:50
+#: template-parts/single/view-anime.php:126
+#: template-parts/view/view-archive.php:82 template-parts/view/view-grid.php:81
+#: template-parts/view/view-spotlight.php:70
+msgid "Watch Now"
+msgstr ""
+
+#: template-parts/display/list-latest-anime.php:4
+msgid "Latest Update"
+msgstr ""
+
+#: template-parts/display/list-latest-episode.php:4
+msgid "Latest Episodes"
+msgstr ""
+
+#: template-parts/display/list-newly-added.php:4
+msgid "New Anime"
+msgstr ""
+
+#: template-parts/display/list-scheduled.php:4
+msgid "Scheduled Episodes"
+msgstr ""
+
+#: template-parts/display/slider-trending.php:3
+msgid "Trending"
+msgstr ""
+
+#: template-parts/single/view-anime.php:134
+msgid "Add to List"
+msgstr ""
+
+#: template-parts/single/view-anime.php:152
+msgid "More"
+msgstr ""
+
+#: template-parts/single/view-anime.php:155
+#, php-format
+msgid ""
+"%1$s is the best site to watch %2$s SUB online, or you\n"
+"                    can even watch %2$s DUB in HD quality"
+msgstr ""
+
+#: template-parts/single/view-anime.php:164
+#: template-parts/single/view-episode.php:225
+msgid "Share This Anime"
+msgstr ""
+
+#: template-parts/single/view-anime.php:175
+msgid "Overview:"
+msgstr ""
+
+#: template-parts/single/view-anime.php:246
+#: template-parts/single/view-episode.php:261
+msgid "Recomended For You!"
+msgstr ""
+
+#: template-parts/single/view-episode.php:90
+msgid "Episode List"
+msgstr ""
+
+#: template-parts/single/view-episode.php:94
+msgid "Episode number"
+msgstr ""
+
+#: template-parts/single/view-episode.php:201
+msgid "Voted"
+msgstr ""
+
+#: template-parts/single/view-episode.php:205
+msgid "Vote Now!"
+msgstr ""
+
+#: template-parts/single/view-episode.php:209
+msgid "Rate this anime!"
+msgstr ""
+
+#: template-parts/single/view-news.php:34
+#, php-format
+msgid "Published %1$s ago."
+msgstr ""
+
+#: template-parts/view/view-episode-list.php:24
+#, php-format
+msgid "Released %1$s ago."
+msgstr ""
+
+#: template-parts/view/view-episode.php:37
+#: template-parts/view/view-episode.php:52
+msgid "Episode "
+msgstr ""
+
+#: template-parts/view/view-homepage.php:48
+msgid "Top Airing!"
+msgstr ""
+
+#: template-parts/view/view-homepage.php:75
+msgid "Most Popular"
+msgstr ""
+
+#: template-parts/view/view-homepage.php:102
+msgid "Most Favorite"
+msgstr ""
+
+#: template-parts/view/view-landing.php:39
+msgid "Search Anime Here..."
+msgstr ""
+
+#: template-parts/view/view-landing.php:53
+msgid "Top Anime:"
+msgstr ""
+
+#: template-parts/view/view-landing.php:89
+msgid "View Full Site"
+msgstr ""
+
+#: template-parts/view/view-landing.php:98
+msgid "Anime News"
+msgstr ""
+
+#: template-parts/view/view-spotlight.php:16
+msgid "Spotlight"
+msgstr ""
+
+#: template-parts/view/view-spotlight.php:74
+msgid "Details"
+msgstr ""
