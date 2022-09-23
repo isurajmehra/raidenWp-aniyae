@@ -136,7 +136,7 @@ function kiranime_save_episode_metadata($post_id, $post, $update)
 function kiranime_episode_information_meta($post)
 {
     $prefix = 'kiranime_episode_';
-    $keys = ['number', 'title', 'duration', 'thumbnail', 'released'];
+    $keys = ['number', 'title', 'released'];
     $vals = [];
     $create_notification = get_post_meta($post->ID, 'create_notification', true);
     $create_notification = !empty($create_notification) ? $create_notification : 1;
@@ -184,7 +184,7 @@ function kiranime_episode_anime_parent($post)
     <div>
         <span
             class="text-xs font-semibold inline-block py-1 px-2 rounded-t text-slate-700 bg-slate-300 uppercase w-2/12 mr-1 flex-shrink-0">
-            Anime title
+            Titulo del anime
         </span>
         <div class="mb-3 pt-0 flex-auto relative">
             <input data-anime-name-input type="text" autocomplete="off" name="kiranime_episode_parent_name"
@@ -228,27 +228,33 @@ players = players && typeof players === 'string' ? JSON.parse(players) : players
     </div>
     <button data-add-player
         class="outline-none col-span-7 sm:col-span-1 border-none bg-accent-3 text-white rounded-sm px-2 py-1 font-medium text-sm">
-        Add Player
+        Reproductor
     </button>
 </div>
 <template id="player-fields">
     <div data-player-index class="grid grid-cols-7 gap-4 p-2 border-slate-300 border mb-3">
         <select data-player-type name="player_type"
             class="col-span-full lg:col-span-1 py-2 px-1 outline-none border-0 border-b border-slate-300 text-sm font-medium focus:border-none">
-            <option value="sub">Subtitled</option>
-            <option value="dub">Dubbed</option>
+            <option value="dub">Doblado</option>
+            <option value="sub">Subtitulado</option>
         </select>
         <select data-player-subtype name="player_subtype"
             class="col-span-full lg:col-span-1 py-2 px-1 outline-none border-0 border-b border-slate-300 text-sm font-medium focus:border-none">
-            <option value="url">Full URL</option>
-            <option value="code">Code</option>
+            <option value="url">Codigo Uri</option>
+            <option value="code">Codigo</option>
         </select>
-        <input type="text" data-player-host name="player_host"
-            class="col-span-full lg:col-span-4 py-2 px-1 outline-none border-0 border-b border-slate-300 text-sm font-medium focus:border-0 focus:outline-none border-l"
-            placeholder="this embed host, example: Youtube">
+        <select data-player-host name="player_host"
+            class="col-span-full lg:col-span-4 py-2 px-1 outline-none border-0 border-b border-slate-300 text-sm font-medium focus:border-0 focus:outline-none border-l">
+            <option value="vrv">VRV</option>
+            <option value="drv">DRV</option>
+            <option value="fembed">Fembed</option>
+            <option value="hqq">HQQ</option>
+            <option value="streamSB">streamSB</option>
+            <option value="web3">Web3</option>
+        </select>
         <button data-remove-player
             class="outline-none col-span-full lg:col-span-1 border-none bg-error text-white rounded-sm px-2 py-2">
-            Remove
+            Eliminar
         </button>
         <input type="text" data-subtype-url name="player_url"
             class="col-span-full lg:col-span-7 py-2 px-1 outline-none border-0 border-b border-slate-300 text-sm font-medium focus:border-0 focus:outline-none border-l"

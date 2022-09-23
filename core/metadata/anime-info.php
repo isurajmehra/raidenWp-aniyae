@@ -43,13 +43,17 @@ downloads = downloads && typeof downloads === 'string' ? JSON.parse(downloads) :
     </div>
     <div data-add-new-download
         class="w-max cursor-pointer text-xs font-semibold px-5 py-2 text-white rounded-sm bg-accent-3">
-        Add Download
+        Añadir nueva descarga
     </div>
     <template id="dl-link-field">
         <div data-field-dl class="grid grid-cols-7 gap-4">
-            <input data-provider name="download_provider" type="text" placeholder="Host name"
-                class="px-3 py-3 placeholder-slate-400 text-stone-600 relative bg-white rounded text-sm border-none ring-1 ring-sky-200 shadow outline-none focus:outline-none focus:ring w-full col-span-2"
-                value="" />
+        <select data-provider name="download_provider"
+                class="col-span-full lg:col-span-1 py-2 px-1 outline-none border-0 border-b border-slate-300 text-sm font-medium focus:border-none">
+                <option value="fembed"><?php _e('Fembed', 'kiranime');?></option>
+                <option value="mega"><?php _e('Mega', 'kiranime');?></option>
+                <option value="opncion3"><?php _e('Opcion 3', 'kiranime');?></option>
+
+            </select>
             <input data-link type="text" name="download_link" placeholder="Download Link"
                 class="px-3 py-3 placeholder-slate-400 text-stone-600 relative bg-white rounded text-sm border-none ring-1 ring-sky-200 shadow outline-none focus:outline-none focus:ring w-full col-span-4"
                 value="" />
@@ -59,7 +63,7 @@ downloads = downloads && typeof downloads === 'string' ? JSON.parse(downloads) :
                     +
                 </button>
                 <button data-remove-link
-                    class="outline-none col-span-1 border-none bg-error text-white rounded-sm px-2 py-1 text-lg font-semibold">
+                    class="outline-none col-span-1 border-none bg-sky-500 text-white rounded-sm px-2 py-1 text-lg font-semibold99">
                     -
                 </button>
             </div>
@@ -69,13 +73,15 @@ downloads = downloads && typeof downloads === 'string' ? JSON.parse(downloads) :
         <div data-download-template class="p-4 mb-3 border border-slate-300">
             <div class="grid grid-cols-7 gap-4">
                 <div class="mb-3 pt-0 flex-auto col-span-6">
-                    <input data-resolution name="resolution[]" type="text" id="resolution" placeholder="resolution"
-                        class="px-3 py-3 placeholder-slate-400 text-stone-600 relative bg-white rounded text-sm shadow outline-none focus:outline-none focus:ring w-full"
-                        value="" />
+                <select data-resolution name="resolution[]"
+                    class="col-span-full lg:col-span-1 py-2 px-1 outline-none border-0 border-b border-slate-300 text-sm font-medium focus:border-none">
+                        <option value="Subtitulado"><?php _e('Subtitulado', 'kiranime');?></option>
+                        <option value="Doblado"><?php _e('Doblado', 'kiranime');?></option>
+                </select>
                 </div>
                 <button data-remove-box
                     class="outline-none mb-3 col-span-1 border-none bg-error text-white rounded-sm px-2 py-1">
-                    Remove
+                    Eliminar
                 </button>
             </div>
             <div data-download-field class="space-y-2">
@@ -322,8 +328,8 @@ function kiranime_add_fetch_metabox($post)
             class="text-xs font-medium uppercase text-slate-800 active:text-slate-900 hover:text-slate-900 focus-within:text-slate-900 min-w-max lg:w-2/12 flex-shrink-0">Choose
             Service</label>
         <select name="kiranime_anime_service_name" id="kiranime_anime_service_name">
-            <option value="tmdb" <?php if ($service_name == 'tmdb') {echo 'selected';}?>>TMDB</option>
             <option value="mal" <?php if ($service_name == 'mal' || !$service_name) {echo 'selected';}?>>MAL</option>
+            <option value="tmdb" <?php if ($service_name == 'tmdb') {echo 'selected';}?>>TMDB</option>
         </select>
     </div>
     <div data-tmdb-only class="w-full h-auto p-2 hidden items-center space-y-1 gap-2">
