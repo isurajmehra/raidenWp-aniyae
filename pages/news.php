@@ -19,7 +19,7 @@ $query = $q->news();?>
             <ol class="flex gap-2 items-center flex-wrap">
                 <li>
                     <a href="/">
-                        <?php _e('Home', 'kiranime');?>
+                        <?php _e('Inicio', 'kiranime');?>
                     </a>
                 </li>
                 <li>
@@ -27,7 +27,7 @@ $query = $q->news();?>
                 </li>
                 <li>
                     <a href="<?=Kiranime_Utility::page_url('pages/news.php')?>" class="text-gray-500">
-                        <?php _e('News', 'kiranime');?>
+                        <?php _e('Noticias', 'kiranime');?>
                     </a>
                 </li>
             </ol>

@@ -121,7 +121,7 @@ $queried = new WP_Query($query);
         <ol class="flex gap-2 items-center flex-wrap">
             <li>
                 <a href="/">
-                    <?php _e('home', 'kiranime')?>
+                    <?php _e('Inicio', 'kiranime')?>
                 </a>
             </li>
             <li>
@@ -129,7 +129,7 @@ $queried = new WP_Query($query);
             </li>
             <li>
                 <a href="?" class="text-gray-500">
-                    <?php _e('filter', 'kiranime');?>
+                    <?php _e('Filtro', 'kiranime');?>
                 </a>
             </li>
         </ol>
@@ -144,19 +144,19 @@ $queried = new WP_Query($query);
                 </div>
                 <div class="flex items-center flex-wrap gap-5">
                     <input type="text" name="s_keyword" value="<?php echo $kw; ?>"
-                        placeholder="<?php _e('Search title here..', 'kiranime')?>"
+                        placeholder="<?php _e('Busca por titulo aqui..', 'kiranime')?>"
                         class="py-2 px-4 text-sm w-full lg:w-max lg:min-w-[200px] bg-tertiary bg-opacity-5 ring-1 ring-sky-500 shadow-sm shadow-accent-3 drop-shadow-md focus:ring-accent-3 focus:ring outline-none border-none rounded ease-in-out duration-200 transition-colors">
                     <div
                         class="w-full lg:w-max  lg:min-w-[200px] flex gap-2 items-center px-2 py-1 border-none ring-1 ring-sky-500 shadow-sm shadow-accent-3 drop-shadow-md focus:ring rounded-md text-sm">
                         <label for="s_type" class="min-w-max flex-shrink-0">
-                            <?php _e('Type', 'kiranime');?>
+                            <?php _e('Tipo', 'kiranime');?>
                         </label>
                         <select name="s_type" id="s_type"
                             class="block w-full pl-3 pr-2 py-1 text-sm outline-none border-none bg-tertiary bg-opacity-0 focus:outline-none text-sky-400 focus:border-none">
                             <?php $data_types = get_terms(['taxonomy' => 'type']);?>
                             <option class="bg-tertiary" value="all"
                                 <?php if ($type == '' || $type == 'all') {echo 'selected';}?>>
-                                <?php _e('All', 'kiranime');?></option>
+                                <?php _e('Todo', 'kiranime');?></option>
                             <?php foreach ($data_types as $fdbtype): ?>
                             <option class="bg-tertiary" value="<?=$fdbtype->slug;?>"
                                 <?php if ($type == $fdbtype->slug) {echo 'selected';}?>><?=$fdbtype->name;?>
@@ -166,13 +166,13 @@ $queried = new WP_Query($query);
                     </div>
                     <div
                         class="w-full lg:w-max lg:min-w-[200px] flex gap-2 items-center px-2 py-1 border-none ring-1 ring-sky-500 shadow-sm shadow-accent-3 drop-shadow-md focus:ring rounded-md text-sm">
-                        <label for="s_status" class="min-w-max flex-shrink-0"><?php _e('Status', 'kiranime');?></label>
+                        <label for="s_status" class="min-w-max flex-shrink-0"><?php _e('Estado', 'kiranime');?></label>
                         <select name="s_status" id="s_status"
                             class="block w-full pl-3 pr-2 py-1 text-sm outline-none border-none bg-tertiary bg-opacity-0 focus:outline-none text-sky-400 focus:border-none">
                             <?php $data_status = get_terms(['taxonomy' => 'status']);?>
                             <option class="bg-tertiary" value="all"
                                 <?php if ($status == '' || $status == 'all') {echo 'selected';}?>>
-                                <?php _e('All', 'kiranime');?></option>
+                                <?php _e('Todo', 'kiranime');?></option>
                             <?php foreach ($data_status as $fdbstatus): ?>
                             <option class="bg-tertiary" value="<?=$fdbstatus->slug;?>"
                                 <?php if ($status == $fdbstatus->slug) {echo 'selected';}?>><?=$fdbstatus->name;?>
@@ -183,40 +183,40 @@ $queried = new WP_Query($query);
                     <div
                         class="w-full lg:w-max lg:min-w-[200px] flex gap-2 items-center px-2 py-1 border-none ring-1 ring-sky-500 shadow-sm shadow-accent-3 drop-shadow-md focus:ring rounded-md text-sm">
                         <label for="s_season" class="min-w-max flex-shrink-0">
-                            <?php _e('Season', 'kiranime');?>
+                            <?php _e('Temporada', 'kiranime');?>
                         </label>
                         <select name="s_season" id="s_season"
                             class="block w-full pl-3 pr-2 py-1 text-sm outline-none border-none bg-tertiary bg-opacity-0 focus:outline-none text-sky-400 focus:border-none">
                             <option class="bg-tertiary py-2" value="all"
                                 <?php if ($season == '' || $season == 'all') {echo 'selected';}?>>
-                                <?php _e('All', 'kiranime');?></option>
+                                <?php _e('Todo', 'kiranime');?></option>
                             <option class="bg-tertiary py-2" value="winter"
                                 <?php if ($season == 'winter') {echo 'selected';}?>>
-                                Winter
+                                Invierno
                             </option>
                             <option class="bg-tertiary py-2" value="spring"
                                 <?php if ($season == 'spring') {echo 'selected';}?>>
-                                Spring
+                                Primavera
                             </option>
                             <option class="bg-tertiary py-2" value="summer"
                                 <?php if ($season == 'summer') {echo 'selected';}?>>
-                                Summer
+                                Verano
                             </option>
                             <option class="bg-tertiary py-2" value="fall"
                                 <?php if ($season == 'fall') {echo 'selected';}?>>
-                                Fall
+                                Otoño
                         </select>
                     </div>
                     <div
                         class="w-full lg:w-max lg:min-w-[200px] flex gap-2 items-center px-2 py-1 border-none ring-1 ring-sky-500 shadow-sm shadow-accent-3 drop-shadow-md focus:ring rounded-md text-sm">
                         <label for="s_year" class="min-w-max flex-shrink-0">
-                            <?php _e('Year', 'kiranime');?>
+                            <?php _e('Año', 'kiranime');?>
                         </label>
                         <select name="s_year" id="s_year"
                             class="block w-full pl-3 pr-2 py-1 text-sm outline-none border-none bg-tertiary bg-opacity-0 focus:outline-none text-sky-400 focus:border-none">
                             <option class="bg-tertiary" value="all"
                                 <?php if ($year_selected == '' || $year_selected == 'all') {echo 'selected';}?>>
-                                <?php _e('All', 'kiranime');?>
+                                <?php _e('Todo', 'kiranime');?>
                             </option>
                             <?php foreach ($years as $year): ?>
                             <option class="bg-tertiary" value="<?php echo $year ?>"
@@ -228,12 +228,12 @@ $queried = new WP_Query($query);
                         class="w-full lg:w-max  lg:min-w-[200px] flex gap-2 items-center px-2 py-1 border-none ring-1 ring-sky-500 shadow-sm shadow-accent-3 drop-shadow-md focus:ring rounded-md text-sm">
                         <?php $sorts = ['title_a_z' => __('Title ASC', 'kiranime'), 'title_z_a' => __('Title DESC', 'kiranime'), 'update' => __('Update', 'kiranime'), 'date' => __('Published', 'kiranime'), 'viewed' => __('Most Viewed', 'kiranime')]?>
                         <label for="s_orderby"
-                            class="min-w-max flex-shrink-0"><?php _e('Sort by', 'kiranime');?></label>
+                            class="min-w-max flex-shrink-0"><?php _e('Agrupar por', 'kiranime');?></label>
                         <select name="s_orderby" id="s_orderby"
                             class="block w-full pl-3 pr-2 py-1 text-sm outline-none border-none bg-tertiary bg-opacity-0 focus:outline-none text-sky-400 focus:border-none">
                             <option class="bg-tertiary" value="default"
                                 <?php if ($orderby == '' || $orderby == 'default') {echo 'selected';}?>>
-                                <?php _e('Default', 'kiranime');?></option>
+                                <?php _e('Defecto', 'kiranime');?></option>
                             <?php foreach ($sorts as $key => $value): ?>
                             <option class="bg-tertiary" value="<?php echo $key ?>"
                                 <?php if ($key == $orderby) {echo 'selected';}?>><?php echo $value ?></option>
@@ -242,7 +242,7 @@ $queried = new WP_Query($query);
                     </div>
                 </div>
                 <div class="text-sm font-medium my-3 w-full">
-                    <?php _e('Genre', 'kiranime');?>
+                    <?php _e('Por Genero', 'kiranime');?>
                 </div>
                 <div class="flex flex-wrap gap-2 mb-5">
                     <?php $genres = get_terms(['taxonomy' => 'genre']);?>
@@ -255,12 +255,12 @@ $queried = new WP_Query($query);
                     <?php endforeach;?>
                 </div>
                 <button type="submit"
-                    class="outline-none border-none shadow-lg drop-shadow-md rounded-md bg-accent-3 w-full block text-center text-sm font-medium col-span-full py-2 px-4 hover:shadow-xl hover:drop-shadow-lg hover:bg-sky-700 ease-in-out duration-200 transition-colors"><?php _e('Filter', 'kiranime');?></button>
+                    class="outline-none border-none shadow-lg drop-shadow-md rounded-md bg-accent-3 w-full block text-center text-sm font-medium col-span-full py-2 px-4 hover:shadow-xl hover:drop-shadow-lg hover:bg-sky-700 ease-in-out duration-200 transition-colors"><?php _e('Aplicar filtros', 'kiranime');?></button>
             </form>
         </div>
         <div class="flex items-center justify-between">
             <h3 class="mb-4 text-2xl font-semibold leading-10 text-sky-400">
-                <?php _e('Filter Results', 'kiranime');?>
+                <?php _e('Resultados', 'kiranime');?>
                 <?php if ($kw) {printf(__('For <i>%1$s</i>', 'kiranime'), $kw);}?>
             </h3>
             <span

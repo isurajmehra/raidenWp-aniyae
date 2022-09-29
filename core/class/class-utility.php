@@ -103,6 +103,7 @@ class Kiranime_Utility
             'single-anime' => ['template-parts/single/view', 'anime'],
             'single-episode' => ['template-parts/single/view', 'episode'],
             'single-news' => ['template-parts/single/view', 'news'],
+            'ultimaData' => ['template-parts/view/view', 'ultimaData'],
         ];
 
         if ($part) {

@@ -26,7 +26,7 @@ $posts = $q->new();?>
 <section class="mb-17 grid grid-cols-12 px-5 mx-auto w-full gap-5">
     <section class="col-span-full <?php if ($sidebar_active) {echo 'lg:col-span-9';}?>">
         <h3 class="mb-4 text-2xl font-semibold leading-10 text-sky-400">
-            <?=get_option('__show_new_label', 'Recently Added Anime')?></h3>
+            <?=get_option('__show_new_label', 'Recien añadidios')?></h3>
         <div class="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-5">
             <?php if ($posts->have_posts()): while ($posts->have_posts()): $posts->the_post();
         ?>

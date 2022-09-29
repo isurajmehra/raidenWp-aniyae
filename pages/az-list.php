@@ -21,7 +21,7 @@ $alphabet = ['All', '#', '0-9', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'
         <ol class="flex gap-2 items-center flex-wrap">
             <li>
                 <a href="/">
-                    <?php _e('Home', 'kiranime');?>
+                    <?php _e('Inicio', 'kiranime');?>
                 </a>
             </li>
             <li>
@@ -29,7 +29,7 @@ $alphabet = ['All', '#', '0-9', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'
             </li>
             <li>
                 <a href="?" class="text-gray-500">
-                    <?php _e('AZ-List', 'kiranime');?>
+                    <?php _e('Lista - AZ', 'kiranime');?>
                 </a>
             </li>
         </ol>
@@ -37,7 +37,7 @@ $alphabet = ['All', '#', '0-9', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'
 </section>
 <section>
     <h2 class="font-semibold text-2xl leading-10 mb-4 text-accent-3 px-4 lg:px-10">
-        <?php _e('Sort By Letters', 'kiranime');?>
+        <?php _e('Acorta tu busqueda mediante letras', 'kiranime');?>
     </h2>
     <div class="p-2 mb-5 h-auto font-montserrat">
         <ul class="w-full lg:px-10 grid grid-cols-6 lg:flex gap-x-1 flex-wrap gap-y-4">

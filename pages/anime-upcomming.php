@@ -17,8 +17,8 @@ $posts = $posts->upcomming();
         <div class="py-5 px-0 relative flex items-center gap-5">
             <div class="block text-xs pl-5 py-1 relative border-l-2 border-sky-400">
                 <span
-                    class="text-sm font-semibold text-sky-400"><?php printf(esc_html__('Share %1$s', 'kiranime'), get_bloginfo('name'));?></span>
-                <p class="mb-0"><?php _e('to your friends!', 'kiranime');?></p>
+                    class="text-sm font-semibold text-sky-400"><?php printf(esc_html__('Puedes compartir', 'kiranime'), get_bloginfo('name'));?></span>
+                <p class="mb-0"><?php _e('y asi ayudarnos a crecer!', 'kiranime');?></p>
             </div>
             <?php Kiranime_Utility::template('share');?>
         </div>

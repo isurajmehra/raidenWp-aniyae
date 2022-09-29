@@ -3,7 +3,7 @@ $util = new Kiranime_Utility(get_the_ID(), get_the_ID());
 $downloads = $util->get_metadata('download', get_post_type(get_the_ID()));
 ?>
 
-<h3 class="font-semibold text-accent-3 text-2xl leading-loose"><?php _e('Downloads', 'kiranime');?></h3>
+<h3 class="font-semibold text-accent-3 text-2xl leading-loose"><?php _e('Descargas', 'kiranime');?></h3>
 <?php if (!empty($downloads) && 0 !== count($downloads)): ?>
 <div class="space-y-1 lg:mt-5">
     <div class="w-full grid text-sm md:gap-5">
@@ -39,5 +39,5 @@ $downloads = $util->get_metadata('download', get_post_type(get_the_ID()));
     </div>
 </div>
 <?php else: ?>
-<span class="text-sm py-4 block"><?php _e('No Download available.', 'kiranime')?></span>
+<span class="text-sm py-4 block"><?php _e('No hay descargas disponibles.', 'kiranime')?></span>
 <?php endif;?>

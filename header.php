@@ -47,11 +47,11 @@
         </div>
         <div class="mt-5 min-h-full">
             <?php if (has_nav_menu('header_side')): wp_nav_menu([
-        'theme_location' => 'header_side',
-        'container_class' => 'w-full',
-        'menu_class' => 'flex flex-col text-sm p-0 m-0',
-    ]);endif?>
-            <div class="mt-5 border-t border-secondary">
+                'theme_location' => 'header_side',
+                'container_class' => 'w-full',
+                'menu_class' => 'flex flex-col text-sm p-0 m-0',
+                ]);endif?>
+                    <div class="mt-5 border-t border-secondary">
                 <?php get_template_part('template-parts/component/list', 'genre');?>
             </div>
         </div>

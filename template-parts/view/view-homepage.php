@@ -5,10 +5,20 @@
 </div>
 <?php }?>
 <!-- End Ads -->
-<div class="w-full lg:px-5 py-5 bg-opacity-100 hidden md:flex gap-5 items-end">
-<!-- Spotlight start -->
-<?php Kiranime_Utility::template('spotlight');?>
-<!-- Spotlight End -->
+<div class="lg:flex justify-between md:px-5 gap-5 sm:px-4">
+    <section class="lg:w-9/12 w-full">
+        <div class="w-full lg:px-5 py-5 bg-opacity-100 hidden md:flex gap-5 items-end">
+        <!-- Spotlight start -->
+        <?php Kiranime_Utility::template('spotlight');?>
+        <!-- Spotlight End -->
+    </section>
+    <aside class="w-full lg:w-3/12 flex-shrink-0 min-h-300 pr-5">
+        <!-- Ultimos caps list -->
+        <?php Kiranime_Utility::template('ultimaData');?>
+        <!-- End Ultimos caps list -->
+    </aside>
+</div>
+
 </div>
 <?php $afe = get_theme_mod('__ads_after_featured');if ($afe): ?>
 <div class="container flex items-center justify-center max-w-full h-auto my-5">

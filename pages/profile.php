@@ -31,7 +31,7 @@ $onepiece = $avatars['onepiece'];
             <form class="space-y-5">
                 <div class="">
                     <label for="username" class="text-sm font-medium block mb-2 uppercase">
-                        <?php _e('Username', 'kiranime')?>
+                        <?php _e('Nombre de usuario', 'kiranime')?>
                     </label>
                     <input type="text" name="username" id="username"
                         class="px-4 py-2 bg-overlay bg-opacity-5 text-sm rounded outline-none border-none ring-1 focus:ring block focus:ring-accent-3 w-full"
@@ -47,7 +47,7 @@ $onepiece = $avatars['onepiece'];
                 </div>
                 <div class="">
                     <label for="joined" class="text-sm font-medium block mb-2 uppercase">
-                        <?php _e('Joined', 'kiranime')?>
+                        <?php _e('Registrado el', 'kiranime')?>
                     </label>
                     <input type="joined" name="joined" id="joined" disabled
                         class="px-4 py-2 bg-overlay bg-opacity-5 text-sm rounded outline-none border-none ring-1 focus:ring block focus:ring-accent-3 w-full"
@@ -58,11 +58,11 @@ $onepiece = $avatars['onepiece'];
                         <path fill="currentColor"
                             d="M512 176.001C512 273.203 433.202 352 336 352c-11.22 0-22.19-1.062-32.827-3.069l-24.012 27.014A23.999 23.999 0 0 1 261.223 384H224v40c0 13.255-10.745 24-24 24h-40v40c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24v-78.059c0-6.365 2.529-12.47 7.029-16.971l161.802-161.802C163.108 213.814 160 195.271 160 176 160 78.798 238.797.001 335.999 0 433.488-.001 512 78.511 512 176.001zM336 128c0 26.51 21.49 48 48 48s48-21.49 48-48-21.49-48-48-48-48 21.49-48 48z" />
                     </svg>
-                    <?php _e('Change Password', 'kiranime')?></span>
+                    <?php _e('Cambiar contraseña', 'kiranime')?></span>
                 <div data-change-password-fields class="w-full space-y-2 hidden transition-all duration-200">
                     <div class="">
                         <label for="current_password" class="text-sm font-medium block mb-2 uppercase">
-                            <?php _e('Current Password', 'kiranime')?>
+                            <?php _e('Contraseña actual', 'kiranime')?>
                         </label>
                         <input data-change-password="current" type="password" name="current_password"
                             id="current_password"
@@ -71,24 +71,24 @@ $onepiece = $avatars['onepiece'];
                     </div>
                     <div class="">
                         <label for="new_password" class="text-sm font-medium block mb-2 uppercase">
-                            <?php _e('New Password', 'kiranime')?>
+                            <?php _e('Nueva contraseña', 'kiranime')?>
                         </label>
                         <input data-change-password="new" type="password" name="new_password" id="new_password"
                             class="px-4 py-2 bg-overlay bg-opacity-5 text-sm rounded outline-none border-none ring-1 focus:ring block focus:ring-accent-3 w-full"
-                            value="" placeholder="<?php _e('Your new password', 'kiranime')?>">
+                            value="" placeholder="<?php _e('Tu nueva contraseña', 'kiranime')?>">
                     </div>
                     <div class="">
                         <label for="confirm_new_password" class="text-sm font-medium block mb-2 uppercase">
-                            <?php _e('Confirm new password', 'kiranime')?>
+                            <?php _e('Confirmar nueva contraseña', 'kiranime')?>
                         </label>
                         <input data-change-password="confirm" type="password" name="confirm_new_password"
                             id="confirm_new_password"
                             class="px-4 py-2 bg-overlay bg-opacity-5 text-sm rounded outline-none border-none ring-1 focus:ring block focus:ring-accent-3 w-full"
-                            value="" placeholder="<?php _e('Confirm new password', 'kiranime')?>">
+                            value="" placeholder="<?php _e('Confirma la nueva contraseña', 'kiranime')?>">
                     </div>
                 </div>
                 <button
-                    class="bg-sky-400 px-4 py-2 w-full rounded-md text-gray-900"><?php _e('Save', 'kiranime')?></button>
+                    class="bg-sky-400 px-4 py-2 w-full rounded-md text-gray-900"><?php _e('Guardar', 'kiranime')?></button>
             </form>
         </div>
         <div class="w-4/12 h-full min-h-full bg-gradient-to-b from-secondary p-4">

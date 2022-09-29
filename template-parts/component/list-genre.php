@@ -10,7 +10,7 @@ $genres = get_terms([
 ]);?>
 <li class="menu-item menu-item-type-post_type">
     <div class="nav-link">
-        <?php _e('Genre', 'kiranime');?>
+        <?php _e('Generos', 'kiranime');?>
     </div>
     <ul class="grid grid-cols-2">
         <?php foreach ($genres as $genre): ?>
