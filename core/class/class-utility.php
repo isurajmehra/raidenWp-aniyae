@@ -83,6 +83,7 @@ class Kiranime_Utility
 
         $templates = [
             'homepage' => ['template-parts/view/view', 'homepage'],
+            'homeLogin' => ['template-parts/view/view', 'homeLogin'],
             'spotlight' => ['template-parts/display/slider', 'spotlight'],
             'trending' => ['template-parts/display/slider', 'trending'],
             'latest-anime' => ['template-parts/display/list', 'latest-anime'],
@@ -103,7 +104,8 @@ class Kiranime_Utility
             'single-anime' => ['template-parts/single/view', 'anime'],
             'single-episode' => ['template-parts/single/view', 'episode'],
             'single-news' => ['template-parts/single/view', 'news'],
-            'ultimaData' => ['template-parts/view/view', 'ultimaData'],
+            'ultimosCaps' => ['template-parts/display/ver', 'ultimosCaps'],
+            'latino' => ['template-parts/display/ver', 'latino'],
         ];
 
         if ($part) {

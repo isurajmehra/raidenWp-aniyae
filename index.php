@@ -1,6 +1,10 @@
 <?php
-get_header();
+get_header(); ?>
 
-Kiranime_Utility::template('homepage');
+<?php if (!is_user_logged_in()) {?>
+<?php Kiranime_Utility::template('homeLogin'); ?>
+<?php } else {?>
+<?php Kiranime_Utility::template('homepage'); ?>
+<?php }?>
 
-get_footer();
+<?php get_footer(); ?>

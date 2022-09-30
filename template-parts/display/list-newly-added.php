@@ -1,7 +1,7 @@
 <div class="w-full mb-4 flex items-center justify-between mt-10 px-4 sm:px-0">
     <div class="mr-4">
         <h2 class="text-2xl leading-10 font-semibold p-0 m-0 text-sky-400">
-            <?php $title = get_theme_mod('__show_new_label');if ($title) {echo $title;} else {_e('New Anime', 'kiranime');}?>
+            <?php $title = get_theme_mod('__show_new_label');if ($title) {echo $title;} else {_e('Nuevos en Aniyae', 'kiranime');}?>
         </h2>
     </div>
     <div class="text-sm font-normal text-opacity-75">
