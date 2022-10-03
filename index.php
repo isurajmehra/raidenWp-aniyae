@@ -7,4 +7,4 @@ get_header(); ?>
 <?php Kiranime_Utility::template('homepage'); ?>
 <?php }?>
 
-<?php get_footer(); ?>
+<?php get_footer();
