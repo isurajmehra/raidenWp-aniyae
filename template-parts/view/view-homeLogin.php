@@ -19,8 +19,6 @@
         <!-- End Ultimos caps list -->
     </aside>
 </div>
-
-</div>
 <?php $afe = get_theme_mod('__ads_after_featured');if ($afe): ?>
 <div class="container flex items-center justify-center max-w-full h-auto my-5">
     <?php echo $afe ?>

@@ -11,14 +11,13 @@
         <!-- Spotlight start -->
         <?php Kiranime_Utility::template('spotlight');?>
         <!-- Spotlight End -->
+        </div>
     </section>
     <aside class="w-full lg:w-3/12 flex-shrink-0 min-h-300 pr-5">
         <!-- Ultimos caps list -->
         <?php Kiranime_Utility::template('ultimosCaps');?>
         <!-- End Ultimos caps list -->
     </aside>
-</div>
-
 </div>
 <?php $afe = get_theme_mod('__ads_after_featured');if ($afe): ?>
 <div class="container flex items-center justify-center max-w-full h-auto my-5">
