@@ -11,6 +11,7 @@
         <!-- Spotlight start -->
         <?php Kiranime_Utility::template('spotlight');?>
         <!-- Spotlight End -->
+        </div>
     </section>
     <aside class="w-full lg:w-3/12 flex-shrink-0 min-h-300 pr-5">
         <!-- Ultimos caps list -->
