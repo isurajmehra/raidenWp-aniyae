@@ -174,9 +174,39 @@ class Kiranime_Query
         $this->base['orderby'] = 'rand';
         $this->base['tax_query'] = [
             [
-                'taxonomy' => 'type',
+                'taxonomy' => 'anime_attribute',
                 'field' => 'slug',
                 'terms' => ['latino'],
+            ],
+        ];
+
+        return new WP_Query($this->base);
+    }
+
+    public function haniyae()
+    {
+        $this->base['posts_per_page'] = $this->archive ? get_option('__archive_count', 20) : 12;
+        $this->base['orderby'] = 'rand';
+        $this->base['tax_query'] = [
+            [
+                'taxonomy' => 'anime_attribute',
+                'field' => 'slug',
+                'terms' => ['haniyae'],
+            ],
+        ];
+
+        return new WP_Query($this->base);
+    }
+
+    public function special()
+    {
+        $this->base['posts_per_page'] = $this->archive ? get_option('__archive_count', 20) : 12;
+        $this->base['orderby'] = 'rand';
+        $this->base['tax_query'] = [
+            [
+                'taxonomy' => 'anime_attribute',
+                'field' => 'slug',
+                'terms' => ['special'],
             ],
         ];
 

@@ -33,7 +33,7 @@ $show_sidebar = get_theme_mod('__show_sidebar', 'show');
         <!-- Newly Added Anime -->
         <?php Kiranime_Utility::template('newly-added');?>
         <!-- Scheduled Anime -->
-        <?php Kiranime_Utility::template('scheduled');?>
+        <?php Kiranime_Utility::template('latino');?>
         <!-- Upcomming Anime -->
         <?php Kiranime_Utility::template('upcomming');?>
     </section>
