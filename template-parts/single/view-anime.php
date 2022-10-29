@@ -24,7 +24,7 @@ $img = $anime->get_image();
 <script>
 const visit_anime_id = <?php echo get_the_ID(); ?>;
 </script>
-<div role="heading" style="margin-top: 70px;padding:70px 0;" class="relative h-full min-h-100">
+<div role="heading" style="padding:70px 0;" class="relative h-full min-h-100">
     <div class="bg-cover bg-center opacity-30 blur-xl absolute inset-0 z-0"
         style="background-image: url('<?php echo $img && $img['background'] ? $img['background'] : $img['featured']; ?>');">
     </div>

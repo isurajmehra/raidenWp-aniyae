@@ -82,8 +82,10 @@ class Kiranime_Utility
         }
 
         $templates = [
+            // Home page
             'homepage' => ['template-parts/view/view', 'homepage'],
             'homeLogin' => ['template-parts/view/view', 'homeLogin'],
+            // Kiranime template
             'spotlight' => ['template-parts/display/slider', 'spotlight'],
             'trending' => ['template-parts/display/slider', 'trending'],
             'latest-anime' => ['template-parts/display/list', 'latest-anime'],
@@ -104,8 +106,14 @@ class Kiranime_Utility
             'single-anime' => ['template-parts/single/view', 'anime'],
             'single-episode' => ['template-parts/single/view', 'episode'],
             'single-news' => ['template-parts/single/view', 'news'],
-            'ultimosCaps' => ['template-parts/display/view', 'ultimosCaps'],
-            'latino' => ['template-parts/display/view', 'latino'],
+            // Template Lists Aniyae
+            'ultimosCaps' => ['template-parts/display/aniyae/list', 'ultimosCaps'],
+            'ultimaGrid' => ['template-parts/display/aniyae/list', 'ultimaGrid'],
+            // Template View Aniyae
+            'latino' => ['template-parts/display/aniyae/view', 'latino'],
+            'lastEpisodes' => ['template-parts/display/aniyae/view', 'lastEpisodes'],
+            'lastMovies' => ['template-parts/display/aniyae/view', 'lastMovies'],
+            'haniyae' => ['template-parts/display/aniyae/get', 'haniyae'],
         ];
 
         if ($part) {

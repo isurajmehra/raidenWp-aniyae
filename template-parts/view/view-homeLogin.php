@@ -6,16 +6,17 @@
 <?php }?>
 <!-- End Ads -->
 <div class="lg:flex justify-between md:px-5 gap-5 sm:px-4">
-    <section class="lg:w-9/12 w-full">
-        <div class="w-full lg:px-5 py-5 bg-opacity-100 hidden md:flex gap-5 items-end">
+    <section class="lg:w-9/12 ml-2 mr-2 mb-8">
         <!-- Spotlight start -->
-        <?php Kiranime_Utility::template('spotlight');?>
+        <?php Kiranime_Utility::template('newly-added');?>
         <!-- Spotlight End -->
-        </div>
     </section>
-    <aside class="w-full lg:w-3/12 flex-shrink-0 min-h-300 pr-5">
+    <aside class="w-full ml-2 max-w-sm rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700" style="background-color: rgb(255 255 255 / 16%); padding-inline: 1vh; padding-bottom: 1vh;">
+        <h2 class="inline-block p-4 leading-10 text-white font-semibold">
+            <?php _e('Ultimos Episodios!', 'kiranime');?>
+        </h2>
         <!-- Ultimos caps list -->
-        <?php Kiranime_Utility::template('ultimosCaps');?>
+        <?php Kiranime_Utility::template('lastEpisodes');?>
         <!-- End Ultimos caps list -->
     </aside>
 </div>
@@ -31,11 +32,17 @@ $show_sidebar = get_theme_mod('__show_sidebar', 'show');
 ?>
     <section class="<?=$show_sidebar === 'show' ? 'lg:w-9/12' : '';?> w-full">
         <!-- Newly Added Anime -->
-        <?php Kiranime_Utility::template('newly-added');?>
+        <?php Kiranime_Utility::template('lastMovies');?>
+        <!-- End Newly Added Anime -->
         <!-- Scheduled Anime -->
         <?php Kiranime_Utility::template('latino');?>
+        <!-- End Scheduled Anime -->
+        <!-- Haniyae -->
+        <?php Kiranime_Utility::template('haniyae');?>
+        <!-- End Haniyae -->
         <!-- Upcomming Anime -->
         <?php Kiranime_Utility::template('upcomming');?>
+        <!-- End Upcomming Anime -->
     </section>
     <aside class="w-full <?=$show_sidebar === 'show' ? 'lg:w-3/12' : 'hidden';?> flex-shrink-0 min-h-300 pr-5">
         <?php if (is_active_sidebar('homepage-sidebar')): dynamic_sidebar('homepage-sidebar');endif;?>

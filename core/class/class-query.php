@@ -83,8 +83,16 @@ class Kiranime_Query
         $mode = get_option('__show_spotlight_by', 'popular');
         switch ($mode) {
             case 'popular':
-                $this->base['meta_key'] = date('mY') . '_kiranime_views';
+                $this->base['post_type'] = 'anime';
+                $this->base['meta_key'] = 'kiranime_anime_updated';
                 $this->base['orderby'] = 'meta_value_num';
+                $this->base['tax_query'] = [
+                    [
+                        'taxonomy' => 'type',
+                        'field' => 'slug',
+                        'terms' => ['tv', 'ona', 'mitico', 'movie', 'ova', 'music'],
+                    ],
+                ];
                 break;
 
             case 'manual':
@@ -189,24 +197,24 @@ class Kiranime_Query
         $this->base['orderby'] = 'rand';
         $this->base['tax_query'] = [
             [
-                'taxonomy' => 'anime_attribute',
+                'taxonomy' => 'type',
                 'field' => 'slug',
-                'terms' => ['haniyae'],
+                'terms' => ['animeh'],
             ],
         ];
 
         return new WP_Query($this->base);
     }
 
-    public function special()
+    public function mitico()
     {
         $this->base['posts_per_page'] = $this->archive ? get_option('__archive_count', 20) : 12;
         $this->base['orderby'] = 'rand';
         $this->base['tax_query'] = [
             [
-                'taxonomy' => 'anime_attribute',
+                'taxonomy' => 'type',
                 'field' => 'slug',
-                'terms' => ['special'],
+                'terms' => ['mitico'],
             ],
         ];
 
@@ -226,6 +234,37 @@ class Kiranime_Query
         $this->base['orderby'] = 'meta_value_num';
         $this->base['suppress_filters'] = true;
         $this->base['meta_key'] = 'kiranime_anime_updated';
+
+        return new WP_Query($this->base);
+    }
+    
+    public function getUltimos()
+    {
+        $this->base['posts_per_page'] = 12;
+        $this->base['orderby'] = 'meta_value_num';
+        $this->base['meta_key'] = 'kiranime_anime_updated';
+        $this->base['tax_query'] = [
+            [
+                'taxonomy' => 'status',
+                'field' => 'slug',
+                'terms' => ['airing', 'currently-airing'],
+            ],
+        ];
+
+        return new WP_Query($this->base);
+    }
+    
+    public function lastMovies()
+    {
+        $this->base['posts_per_page'] = $this->archive ? get_option('__archive_count', 20) : 12;
+        $this->base['orderby'] = 'rand';
+        $this->base['tax_query'] = [
+            [
+                'taxonomy' => 'type',
+                'field' => 'slug',
+                'terms' => ['movie'],
+            ],
+        ];
 
         return new WP_Query($this->base);
     }

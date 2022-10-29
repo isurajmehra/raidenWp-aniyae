@@ -87,7 +87,7 @@ function kiranime_register_taxonomy()
             'show_ui' => true,
             'hierarchical' => true,
             'rest_base' => 'anime_type',
-            'rewrite' => 'anime-type',
+            'rewrite' => 'type',
         ],
         [
             'name' => 'Status',

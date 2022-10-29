@@ -125,7 +125,7 @@ class Kiranime_Watchlist
         }
 
         update_post_meta($anime_id, 'bookmark_count', $new_count);
-        return ['message' => __('Anime removido de tu lista!', 'kiranime')];
+        return ['message' => __('Eliminado de tu lista!', 'kiranime')];
     }
 
     public static function get(int $page = 1, int $total = 20, int $user_id = 0)

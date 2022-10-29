@@ -271,6 +271,43 @@ class Kiranime_Anime
     }
 
     /**
+     * get the latest ascend episode of current anime
+     *
+     * @return null|Array null if doesn't have episodes, array if has episode. array data => metadata, title, id, url
+     */
+    public function ascend_episode()
+    {
+        $latest = get_posts([
+            'post_type' => 'episode',
+            'post_status' => 'publish',
+            'order' => 'ASC',
+            'orderby' => 'meta_value_num',
+            'meta_key' => 'kiranime_episode_number',
+            'posts_per_page' => 1,
+            'meta_query' => [
+                [
+                    'key' => 'kiranime_episode_parent_id',
+                    'value' => $this->anime,
+                ],
+            ],
+        ]);
+
+        if (!$latest || count($latest) == 0) {
+            return null;
+        }
+
+        $this->episode = new Kiranime_Episode($latest[0]->ID);
+        $thumb = $this->episode->get_image();
+
+        return [
+            "metadata" => $this->episode->meta(),
+            'title' => $latest[0]->post_title,
+            'featured' => $thumb ? $thumb : $this->get_image('featured'),
+            'url' => get_post_permalink($latest[0]),
+        ];
+    }
+
+    /**
      * use for A-Z list withr regex search
      *
      * @param string $letter letter to get from

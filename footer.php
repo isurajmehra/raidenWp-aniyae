@@ -15,7 +15,7 @@
             </a>
             <div class="pl-8 border-l border-gray-400 border-opacity-40 flex gap-5 items-center">
                 <div class="w-max">
-                    <span class="block text-xs"><?php _e('Join Now', 'kiranime')?></span>
+                    <span class="block text-xs"><?php _e('Tambien en: ', 'kiranime')?></span>
                     <span class="block text-sm">
                         <?php echo get_bloginfo('name') ?>
                     </span>

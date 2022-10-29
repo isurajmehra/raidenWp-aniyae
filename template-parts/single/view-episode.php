@@ -29,7 +29,7 @@ $anime_encode = json_encode($anime);
 $data_inline = ';const kiranime_set_vote_anime = "' . wp_create_nonce('kiranime_set_vote_anime') . '";const currentEpisode = ' . $ce . ';const currentEpisodeId = ' . get_the_ID() . ';const animeId =' . $aid . ';const visit_anime_id = ' . $aid . ';const anime = ' . $anime_encode . ';const episodeDuration = "' . $meta['duration'] . '";';
 wp_add_inline_script('kiranime-vendors', $data_inline, 'before');
 ?>
-<section role="heading" class="relative h-full min-h-100 pt-6 lg:pt-10 mt-12 pb-5">
+<section role="heading" class="relative h-full min-h-100 pt-6 lg:pt-10 pb-5">
     <div class="bg-cover bg-center opacity-30 blur-xl absolute inset-0 z-0"
         style="background-image: url('<?=$anime['featured']?>');">
     </div>
@@ -100,10 +100,10 @@ wp_add_inline_script('kiranime-vendors', $data_inline, 'before');
                     </div>
                     <div data-episode-list-container class="eplist-container overflow-y-scroll custom-scrollbar">
                         <div class="lg:min-h-screen pb-16">
-                            <?php
-foreach (array_reverse($anime['episodes']) as $key => $episode):
-    $t_output = $episode['metadata']['title'] ? $episode['metadata']['title'] : $episode['title'];
-    ?>
+                                    <?php
+                                    foreach (array_reverse($anime['episodes']) as $key => $episode):
+                                    $t_output = $episode['metadata']['title'] ? $episode['metadata']['title'] : $episode['title'];?>
+                                    
 	                            <a data-episode-list-index="<?=$key + 1;?>"
 	                                class="relative py-2 lg:py-3 px-4 before:absolute before:inset-y-0 before:left-0 before:bg-accent-3 before:h-full <?php if ($episode['id'] === get_the_ID()): echo 'before:w-2px odd:bg-opacity-20 even:bg-opacity-20';else:echo 'odd:bg-opacity-10 even:bg-opacity-0';endif;?>  bg-white text-sm font-normal lg:font-medium flex gap-5"
 	                                href="<?=$episode['url']?>" title="<?=$t_output?>">

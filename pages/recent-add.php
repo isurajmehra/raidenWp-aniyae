@@ -11,18 +11,6 @@ $sidebar_active = is_active_sidebar('archive-sidebar');
 $page = (get_query_var('paged')) ? get_query_var('paged') : 1;
 $q = new Kiranime_Query(['page' => $page, 'archive' => true]);
 $posts = $q->new();?>
-<div class="mt-17 inline-block mb-5 bg-darkest w-full">
-    <div class="px-4">
-        <div class="py-5 px-0 relative flex items-center gap-5">
-            <div class="block text-xs pl-5 py-1 relative border-l-2 border-sky-400">
-                <span
-                    class="text-sm font-semibold text-sky-400"><?php printf(esc_html__('Share %1$s', 'kiranime'), get_bloginfo('name'));?></span>
-                <p class="mb-0"><?php _e('to your friends!', 'kiranime');?></p>
-            </div>
-            <?php Kiranime_Utility::template('share');?>
-        </div>
-    </div>
-</div>
 <section class="mb-17 grid grid-cols-12 px-5 mx-auto w-full gap-5">
     <section class="col-span-full <?php if ($sidebar_active) {echo 'lg:col-span-9';}?>">
         <h3 class="mb-4 text-2xl font-semibold leading-10 text-sky-400">

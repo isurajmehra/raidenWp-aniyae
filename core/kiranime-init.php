@@ -337,20 +337,19 @@ class Kiranime_Init
                 'not-yet-aired' => __('Not Yet Aired', 'kiranime'),
             ],
             'anime_attribute' => [
-                'sub' => 'SUB',
-                'dub' => 'DUB',
-                'hd' => 'HD',
+                'sub' => 'Sub',
+                'latino' => 'Latino',
             ],
             'episode_type' => [
-                'series' => __('Series', 'kiranime'),
-                'movie' => __('Movie', 'kiranime'),
+                'anime' => __('Anime', 'kiranime'),
+                'movie' => __('Pelicula', 'kiranime'),
             ],
-            'anime_type' => [
+            'type' => [
                 'ova' => 'OVA',
                 'movie' => 'Movie',
                 'ona' => 'ONA',
                 'tv' => 'TV',
-                'special' => 'Special',
+                'animeh' => 'AnimeH',
             ],
         ];
 
@@ -370,21 +369,21 @@ class Kiranime_Init
     private function __pages()
     {
         $pages = [
-            'profile' => __('My Profile', 'kiranime'),
-            'continue-watching' => __('Continue Watching', 'kiranime'),
-            'watchlist' => __('Watch List', 'kiranime'),
-            'setting' => __('Setting', 'kiranime'),
-            'notification' => __('Notification', 'kiranime'),
-            'recent-add' => __('Recently Added Anime', 'kiranime'),
-            'anime-upcomming' => __('Upcomming Anime', 'kiranime'),
-            'latest-update' => __('Latest Update Anime', 'kiranime'),
-            'advanced-search' => __('Advanced Search', 'kiranime'),
+            'profile' => __('Mi Perfil', 'kiranime'),
+            'continue-watching' => __('Historial', 'kiranime'),
+            'watchlist' => __('Listas', 'kiranime'),
+            'setting' => __('Configuración', 'kiranime'),
+            'notification' => __('Notifys', 'kiranime'),
+            'recent-add' => __('Animes Recien Añadidos', 'kiranime'),
+            'anime-upcomming' => __('Lo que se viene', 'kiranime'),
+            'latest-update' => __('Ultimos capitulos', 'kiranime'),
+            'advanced-search' => __('Busqueda avanzada', 'kiranime'),
             'top-airing' => __('Top Currently Airing', 'kiranime'),
             'most-popular' => __('Most Popular Anime', 'kiranime'),
             'most-favorite' => __('Most Favorite Anime', 'kiranime'),
-            'az-list' => __('A-Z Anime List', 'kiranime'),
-            'homepage' => __('Home', 'kiranime'),
-            'news' => __('News', 'kiranime'),
+            'az-list' => __('Busqueda de la A-Z', 'kiranime'),
+            'homepage' => __('Inicio', 'kiranime'),
+            'news' => __('Noticias', 'kiranime'),
         ];
 
         foreach ($pages as $page_template => $page_name) {

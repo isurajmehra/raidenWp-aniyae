@@ -5,8 +5,8 @@
         </h2>
     </div>
     <div class="text-sm font-normal text-opacity-75">
-        <a class="flex items-center gap-2" href="<?=Kiranime_Utility::page_url('pages/recent-add.php');?>">
-            <?php _e('View More', 'kiranime');?>
+        <a class="px-4 py-2 rounded-full w-max max-w-max flex items-center gap-3 bg-accent-3 font-medium text-sm my-5 mx-3" href="<?=Kiranime_Utility::page_url('pages/recent-add.php');?>">
+            <?php _e('Ver otros', 'kiranime');?>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" class="w-5 h-5 inline-block">
                 <path fill="currentColor"
                     d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />
@@ -22,7 +22,7 @@ $new_animes = $new_animes->new();
 if ($new_animes->have_posts()):
     while ($new_animes->have_posts()):
         $new_animes->the_post();
-        get_template_part('template-parts/view/view', 'grid');
+        get_template_part('template-parts/display/aniyae/list', 'ultimaGrid');
     endwhile;
 endif;?>
 </section>

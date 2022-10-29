@@ -43,7 +43,7 @@
                 <path fill="currentColor"
                     d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z" />
             </svg>
-            <?php _e('Close Menu', 'kiranime')?>
+            <?php _e('Cerrar menú', 'kiranime')?>
         </div>
         <div class="mt-5 min-h-full">
             <?php if (has_nav_menu('header_side')): wp_nav_menu([
@@ -56,4 +56,4 @@
             </div>
         </div>
     </div>
-    <main class="max-w-screen min-h-screen overflow-visible overflow-x-hidden z-40 mb-10">
+    <main class="max-w-screen min-h-screen overflow-visible overflow-x-hidden z-40 mb-10" style="margin-top: 4.25rem;">

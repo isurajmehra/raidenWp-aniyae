@@ -54,4 +54,4 @@
             <?php Kiranime_Utility::template('genre');?>
         </div>
     </div>
-    <main class="max-w-screen min-h-screen overflow-visible overflow-x-hidden z-40 mb-10">
+    <main class="max-w-screen min-h-screen overflow-visible overflow-x-hidden z-40 mb-10" style="margin-top: 4.25rem;">

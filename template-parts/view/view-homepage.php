@@ -7,7 +7,7 @@
 <!-- End Ads -->
 <div class="lg:flex justify-between md:px-5 gap-5 sm:px-4">
     <section class="lg:w-9/12 w-full">
-        <div class="w-full lg:px-5 py-5 bg-opacity-100 hidden md:flex gap-5 items-end">
+        <div class="w-full lg:px-5 py-5 bg-opacity-100 md:flex gap-5 items-end">
         <!-- Spotlight start -->
         <?php Kiranime_Utility::template('spotlight');?>
         <!-- Spotlight End -->
@@ -15,7 +15,7 @@
     </section>
     <aside class="w-full lg:w-3/12 flex-shrink-0 min-h-300 pr-5">
         <!-- Ultimos caps list -->
-        <?php Kiranime_Utility::template('ultimosCaps');?>
+        <?php Kiranime_Utility::template('lastEpisodes');?>
         <!-- End Ultimos caps list -->
     </aside>
 </div>
@@ -33,7 +33,7 @@ $show_sidebar = get_theme_mod('__show_sidebar', 'show');
         <!-- Newly Added Anime -->
         <?php Kiranime_Utility::template('newly-added');?>
         <!-- Scheduled Anime -->
-        <?php Kiranime_Utility::template('scheduled');?>
+        <?php Kiranime_Utility::template('lastMovies');?>
         <!-- Upcomming Anime -->
         <?php Kiranime_Utility::template('upcomming');?>
     </section>
