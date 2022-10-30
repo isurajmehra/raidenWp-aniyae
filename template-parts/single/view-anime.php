@@ -206,8 +206,6 @@ const visit_anime_id = <?php echo get_the_ID(); ?>;
 <div class="lg:flex gap-10 space-y-5 lg:space-y-0 lg:px-10 px-5 lg:py-10 py-5">
     <section class="flex-auto lg:w-9/12 w-full">
         <section>
-            <!-- start download -->
-            <?php Kiranime_Utility::template('download', 'component/list');?>
             <!-- end download -->
             <?php if (get_theme_mod('__ads_after_download')): ?>
             <div class="container flex items-center justify-center w-full h-auto my-5">

@@ -6,7 +6,7 @@ $image = $anime->get_image('featured');
 $type = wp_get_post_terms(get_the_ID(), 'type');
 ?>
 <a href="<?php echo $latest && $latest['url'] ? $latest['url'] : the_permalink(); ?>" title="<?php the_title();?>">
-    <li class="flex gap-4 px-4 py-2 w-full max-w-sm rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700" style="background-color: rgb(255 255 255 / 16%);">
+    <li class="flex gap-4 px-4 py-2 w-full max-w-sm rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 mb-2" style="background-color: rgb(255 255 255 / 16%);">
         <div data-tippy-featured-id="<?php the_ID()?>"
             class=" w-12 h-16 pb-16 rounded shadow flex-shrink-0 relative overflow-hidden bg-primary">
                 <img class="absolute inset-0 w-full h-full" src="<?=$image;?>" alt="<?php the_title()?>" />

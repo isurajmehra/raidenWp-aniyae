@@ -40,15 +40,15 @@ class Kiranime_Popular_List extends WP_Widget
         <div data-tab-id="1"
             class="w-full p-2 py-3 text-sm font-medium cursor-pointer rounded-tl-md bg-secondary text-center"
             onClick="JavaScript:selectPopularTab(0);">
-            <?php _e('Today', 'kiranime');?>
+            <?php _e('Hoy día', 'kiranime');?>
         </div>
         <div data-tab-id="2" class="w-full p-2 py-3 text-sm font-medium cursor-pointer text-center"
             onClick="JavaScript:selectPopularTab(1);">
-            <?php _e('Week', 'kiranime');?>
+            <?php _e('Semana', 'kiranime');?>
         </div>
         <div data-tab-id="3" class="w-full p-2 py-3 text-sm font-medium cursor-pointer text-center rounded-tr-md"
             onClick="JavaScript:selectPopularTab(2);">
-            <?php _e('Month', 'kiranime');?>
+            <?php _e('Del mes 🧐', 'kiranime');?>
         </div>
     </div>
 

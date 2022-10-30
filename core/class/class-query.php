@@ -112,12 +112,12 @@ class Kiranime_Query
     }
 
     function new () {
-        $this->base['posts_per_page'] = $this->archive ? get_option('__archive_count', 20) : 12;
+        $this->base['posts_per_page'] = $this->archive ? get_option('__archive_count', 20) : 8;
         $this->base['tax_query'] = [
             [
-                'taxonomy' => 'status',
+                'taxonomy' => 'type',
                 'field' => 'slug',
-                'terms' => ['airing', 'completed'],
+                'terms' => ['tv', 'ona', 'mitico', 'movie', 'ova', 'music'],
             ],
         ];
 
@@ -126,7 +126,7 @@ class Kiranime_Query
 
     public function upcomming()
     {
-        $this->base['posts_per_page'] = $this->archive ? get_option('__archive_count', 20) : 12;
+        $this->base['posts_per_page'] = $this->archive ? get_option('__archive_count', 20) : 8;
         $this->base['orderby'] = 'date';
         $this->base['tax_query'] = [
             [
@@ -178,7 +178,7 @@ class Kiranime_Query
     
     public function latino()
     {
-        $this->base['posts_per_page'] = $this->archive ? get_option('__archive_count', 20) : 12;
+        $this->base['posts_per_page'] = $this->archive ? get_option('__archive_count', 20) : 8;
         $this->base['orderby'] = 'rand';
         $this->base['tax_query'] = [
             [
@@ -208,7 +208,7 @@ class Kiranime_Query
 
     public function mitico()
     {
-        $this->base['posts_per_page'] = $this->archive ? get_option('__archive_count', 20) : 12;
+        $this->base['posts_per_page'] = $this->archive ? get_option('__archive_count', 20) : 8;
         $this->base['orderby'] = 'rand';
         $this->base['tax_query'] = [
             [
@@ -240,7 +240,7 @@ class Kiranime_Query
     
     public function getUltimos()
     {
-        $this->base['posts_per_page'] = 12;
+        $this->base['posts_per_page'] = $this->archive ? get_option('__archive_count', 20) : 15;
         $this->base['orderby'] = 'meta_value_num';
         $this->base['meta_key'] = 'kiranime_anime_updated';
         $this->base['tax_query'] = [
@@ -256,13 +256,196 @@ class Kiranime_Query
     
     public function lastMovies()
     {
-        $this->base['posts_per_page'] = $this->archive ? get_option('__archive_count', 20) : 12;
+        $this->base['posts_per_page'] = $this->archive ? get_option('__archive_count', 20) : 8;
         $this->base['orderby'] = 'rand';
         $this->base['tax_query'] = [
             [
                 'taxonomy' => 'type',
                 'field' => 'slug',
                 'terms' => ['movie'],
+            ],
+        ];
+
+        return new WP_Query($this->base);
+    }
+    
+    public function lunes(){
+        $this->base['posts_per_page'] = 20;
+        $this->base['orderby'] = 'DESC';
+        $this->base['tax_query'] = [
+            [
+                'taxonomy' => 'status',
+                'field' => 'slug',
+                'terms' => ['lunes'],
+            ],
+        ];
+
+        return new WP_Query($this->base);
+    }
+    public function martes(){
+        $this->base['posts_per_page'] = 20;
+        $this->base['orderby'] = 'DESC';
+        $this->base['tax_query'] = [
+            [
+                'taxonomy' => 'status',
+                'field' => 'slug',
+                'terms' => ['martes'],
+            ],
+        ];
+
+        return new WP_Query($this->base);
+    }
+    public function miercoles(){
+        $this->base['posts_per_page'] = 20;
+        $this->base['orderby'] = 'DESC';
+        $this->base['tax_query'] = [
+            [
+                'taxonomy' => 'status',
+                'field' => 'slug',
+                'terms' => ['miercoles'],
+            ],
+        ];
+
+        return new WP_Query($this->base);
+    }
+    public function jueves(){
+        $this->base['posts_per_page'] = 20;
+        $this->base['orderby'] = 'DESC';
+        $this->base['tax_query'] = [
+            [
+                'taxonomy' => 'status',
+                'field' => 'slug',
+                'terms' => ['jueves'],
+            ],
+        ];
+
+        return new WP_Query($this->base);
+    }
+    public function viernes(){
+        $this->base['posts_per_page'] = 20;
+        $this->base['orderby'] = 'DESC';
+        $this->base['tax_query'] = [
+            [
+                'taxonomy' => 'status',
+                'field' => 'slug',
+                'terms' => ['viernes'],
+            ],
+        ];
+
+        return new WP_Query($this->base);
+    }
+    public function sabado(){
+        $this->base['posts_per_page'] = 20;
+        $this->base['orderby'] = 'DESC';
+        $this->base['tax_query'] = [
+            [
+                'taxonomy' => 'status',
+                'field' => 'slug',
+                'terms' => ['sabado'],
+            ],
+        ];
+
+        return new WP_Query($this->base);
+    }
+    public function domingo(){
+        $this->base['posts_per_page'] = 20;
+        $this->base['orderby'] = 'DESC';
+        $this->base['tax_query'] = [
+            [
+                'taxonomy' => 'status',
+                'field' => 'slug',
+                'terms' => ['domingo'],
+            ],
+        ];
+
+        return new WP_Query($this->base);
+    }
+    public function latino_lunes(){
+        $this->base['posts_per_page'] = 20;
+        $this->base['orderby'] = 'DESC';
+        $this->base['tax_query'] = [
+            [
+                'taxonomy' => 'status',
+                'field' => 'slug',
+                'terms' => ['latino-lunes'],
+            ],
+        ];
+
+        return new WP_Query($this->base);
+    }
+    public function latino_martes(){
+        $this->base['posts_per_page'] = 20;
+        $this->base['orderby'] = 'DESC';
+        $this->base['tax_query'] = [
+            [
+                'taxonomy' => 'status',
+                'field' => 'slug',
+                'terms' => ['latino-martes'],
+            ],
+        ];
+
+        return new WP_Query($this->base);
+    }
+    public function latino_miercoles(){
+        $this->base['posts_per_page'] = 20;
+        $this->base['orderby'] = 'DESC';
+        $this->base['tax_query'] = [
+            [
+                'taxonomy' => 'status',
+                'field' => 'slug',
+                'terms' => ['latino-miercoles'],
+            ],
+        ];
+
+        return new WP_Query($this->base);
+    }
+    public function latino_jueves(){
+        $this->base['posts_per_page'] = 20;
+        $this->base['orderby'] = 'DESC';
+        $this->base['tax_query'] = [
+            [
+                'taxonomy' => 'status',
+                'field' => 'slug',
+                'terms' => ['latino-jueves'],
+            ],
+        ];
+
+        return new WP_Query($this->base);
+    }
+    public function latino_viernes(){
+        $this->base['posts_per_page'] = 20;
+        $this->base['orderby'] = 'DESC';
+        $this->base['tax_query'] = [
+            [
+                'taxonomy' => 'status',
+                'field' => 'slug',
+                'terms' => ['latino-viernes'],
+            ],
+        ];
+
+        return new WP_Query($this->base);
+    }
+    public function latino_sabado(){
+        $this->base['posts_per_page'] = 20;
+        $this->base['orderby'] = 'DESC';
+        $this->base['tax_query'] = [
+            [
+                'taxonomy' => 'status',
+                'field' => 'slug',
+                'terms' => ['latino-sabado'],
+            ],
+        ];
+
+        return new WP_Query($this->base);
+    }
+    public function latino_domingo(){
+        $this->base['posts_per_page'] = 20;
+        $this->base['orderby'] = 'DESC';
+        $this->base['tax_query'] = [
+            [
+                'taxonomy' => 'status',
+                'field' => 'slug',
+                'terms' => ['latino-domingo'],
             ],
         ];
 

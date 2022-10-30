@@ -11,7 +11,7 @@
         <?php Kiranime_Utility::template('newly-added');?>
         <!-- Spotlight End -->
     </section>
-    <aside class="w-full ml-2 max-w-sm rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700" style="background-color: rgb(255 255 255 / 16%); padding-inline: 1vh; padding-bottom: 1vh;">
+    <aside class="w-full ml-2 max-w-sm rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700" style="background-color: rgb(255 255 255 / 16%); padding-inline: 1vh; padding-bottom: 1vh; margin-bottom: 9vh;">
             <h2 class="inline-block p-4 leading-10 text-white font-semibold">
                 <?php _e('Ultimos Episodios!', 'kiranime');?>
             </h2>

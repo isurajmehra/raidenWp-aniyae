@@ -1,4 +1,4 @@
-    <section class="overflow-y-scroll" style="height: 50rem;" >
+<section class="overflow-y-scroll" style="height: 27rem;" >
         <?php
             $latino_animes = new Kiranime_Query();
             $latino_animes = $latino_animes->getUltimos();

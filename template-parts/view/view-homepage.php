@@ -16,7 +16,7 @@
                 <?php _e('Ultimos Episodios!', 'kiranime');?>
             </h2>
             <!-- Ultimos caps list -->
-            <?php Kiranime_Utility::template('lastEpisodes');?>
+            <?php Kiranime_Utility::template('lastEpisodes2');?>
             <!-- End Ultimos caps list -->
     </aside>
 </div>

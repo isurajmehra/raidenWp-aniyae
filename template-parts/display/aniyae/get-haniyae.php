@@ -38,7 +38,7 @@
                     if ($new_animes->have_posts()):
                 while ($new_animes->have_posts()):
                 $new_animes->the_post();
-                    get_template_part('template-parts/display/aniyae/list', 'ultimaGrid');
+                    get_template_part('template-parts/display/aniyae/list', 'view-haniyae');
                 endwhile;
             endif;?>
         </section>

@@ -16,9 +16,6 @@
             <div class="pl-8 border-l border-gray-400 border-opacity-40 flex gap-5 items-center">
                 <div class="w-max">
                     <span class="block text-xs"><?php _e('Tambien en: ', 'kiranime')?></span>
-                    <span class="block text-sm">
-                        <?php echo get_bloginfo('name') ?>
-                    </span>
                 </div>
                 <div class="flex items-center justify-start gap-4">
                     <?php if (get_theme_mod('__show_social_link', 'show') === 'show'):
@@ -40,8 +37,8 @@
         <div class="mb-3 hidden sm:block sm:text-center lg:text-left">
             <div class="block mb-3">
                 <span
-                    class="inline-block pr-5 mr-5 border-r border-gray-400 border-opacity-40 leading-4 text-xl font-semibold"><?php _e('A-Z LIST', 'kiranime')?></span>
-                <span class="text-xs"><?php _e('Searching anime order by alphabet name A to Z.', 'kiranime');?></span>
+                    class="inline-block pr-5 mr-5 border-r border-gray-400 border-opacity-40 leading-4 text-xl font-semibold"><?php _e('Busqueda de la A a la Z', 'kiranime')?></span>
+                <span class="text-xs"><?php _e('Busca de la A a la Z.', 'kiranime');?></span>
             </div>
             <ul class="mt-2 m-0 p-0 list-none">
                 <?php
@@ -80,11 +77,11 @@ foreach ($alphabet as $key => $value) {
 ])?>
         </div>
         <?php endif;?>
-        <div data-site-info class="text-xs  text-gray-400 text-opacity-80 text-center md:text-left">
-            <?php printf(esc_html__('%1$s does not store any files on our server, we only linked to the media which is hosted on 3rd party services.', 'kiranime'), get_bloginfo('name'));?>
+        <div class="text-xs  text-gray-400 text-opacity-80 text-center md:text-left">
+            <?php printf(esc_html__('Ningun video se encuentra alojado en nuestro servidor o en servidores bajo contrato de Analitica. Todos los videos estan alojados en servidores de terceros.', 'kiranime'), get_bloginfo('name'));?>
         </div>
-        <p data-site-name class="text-xs  text-gray-400 text-opacity-80 mb-3 text-center md:text-left">©
-            <?php echo get_bloginfo('name') ?></p>
+        <p class="text-xs  text-gray-400 text-opacity-80 mb-3 text-center md:text-left">©
+            Analitica</p>
     </div>
 </div>
 <?php wp_footer();?>

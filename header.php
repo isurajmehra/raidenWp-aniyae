@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+        <script data-cfasync="false" type="text/javascript" src="//onclickprediction.com/a/display.php?r=6379934"></script>
+        <script data-cfasync="false" src="//ashcdn.com/script/ippg.js" data-adel="inpage" zid="6379930" rr="30" mads="2"></script>
 </head>
 
 <body <?php body_class('bg-primary text-white antialiased font-montserrat');?>>

@@ -86,11 +86,11 @@ wp_add_inline_script('kiranime-vendors', $data_inline, 'before');
                     class="bg-primary lg:absolute inset-y-0 left-10 xl:left-0 lg:max-w-xs w-full h-full overflow-hidden lg:min-h-300">
                     <div
                         class="h-12 bg-overlay bg-opacity-5 lg:bg-darker lg:bg-opacity-100 w-full text-sm font-semibold flex items-center justify-between px-2 lg:px-4 relative z-20">
-                        <span><?php _e('Episode List', 'kiranime')?></span>
+                        <span><?php _e(' Episodios', 'kiranime')?></span>
                         <div class="w-7/12 relative">
                             <input data-episode-number-search type="text" name="episode_number"
                                 class="bg-opacity-10 w-full pl-7 bg-primary px-2 py-2 h-full text-xs rounded focus:outline-none outline-none border-none ring-1 ring-gray-600 ring-opacity-70 font-medium text-gray-400"
-                                placeholder="<?php _e('Episode number', 'kiranime')?>">
+                                placeholder="<?php _e('Numero de episodio', 'kiranime')?>">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
                                 class="w-3 h-3 absolute top-2 left-2">
                                 <path fill="currentColor"
@@ -197,15 +197,15 @@ wp_add_inline_script('kiranime-vendors', $data_inline, 'before');
                             <span data-vote-count>
                                 (<?php $voted = $vote['voted'] ? $vote['voted'] : 0;?>
                                 <?=$voted;?>
-                                <?php _e('Voted', 'kiranime')?>)
+                                <?php _e('Votado', 'kiranime')?>)
                             </span>
                         </div>
                         <span class="text-sm font-semibold">
-                            <?php _e('Vote Now!', 'kiranime');?>
+                            <?php _e('Vota ahora!', 'kiranime');?>
                         </span>
                     </div>
                     <span class="block w-full text-center text-sm font-semibold leading-loose my-2">
-                        <?php _e('Rate this anime!', 'kiranime')?>
+                        <?php _e('Califica esta obra!', 'kiranime')?>
                     </span>
                     <div data-vote-status="0" class="flex items-center">
                         <?php $vhtml = $anime_base->vote_html($meta['parent_id'])?>
