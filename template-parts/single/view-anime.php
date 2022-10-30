@@ -231,7 +231,7 @@ endif;
             <div class="w-full mb-4 flex items-center justify-between mt-10">
                 <div class="mr-4">
                     <h2 class="text-2xl leading-10 font-semibold p-0 m-0 text-sky-400">
-                        <?php $title = get_theme_mod('__show_related_anime_label');if ($title) {echo $title;} else {_e('Recomended For You!', 'kiranime');}?>
+                        <?php $title = get_theme_mod('__show_related_anime_label');if ($title) {echo $title;} else {_e('Similares a este!', 'kiranime');}?>
                     </h2>
                 </div>
             </div>

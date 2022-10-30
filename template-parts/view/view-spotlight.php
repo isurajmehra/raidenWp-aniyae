@@ -67,11 +67,11 @@ if ($query->have_posts()): while ($query->have_posts()): $query->the_post();
                         <path fill="currentColor"
                             d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z" />
                     </svg>
-                    <?php _e('Watch Now', 'kiranime');?>
+                    <?php _e('Ver ahora', 'kiranime');?>
                 </a>
                 <a href="<?php the_permalink()?>"
                     class="flex items-center gap-2 px-3 py-2 bg-primary rounded-md hover:bg-gray-700">
-                    <?php _e('Details', 'kiranime');?>
+                    <?php _e('Detalles', 'kiranime');?>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" class="w-3 h-3">
                         <path fill="currentColor"
                             d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />

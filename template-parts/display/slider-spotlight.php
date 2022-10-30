@@ -1,4 +1,4 @@
-<div class="w-full sm:mt-17 lg:mt-9 sm:mb-5  bg-sky-500 bg-opacity-0 flex items-center relative justify-center">
+<div class="w-full sm:mt-17 lg:mt-9 sm:mb-5  bg-sky-500 bg-opacity-0 flex items-center relative justify-center" style="max-width: 53rem;">
     <div class="swiper swiper-spotlight">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">

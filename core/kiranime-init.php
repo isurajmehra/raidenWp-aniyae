@@ -384,6 +384,8 @@ class Kiranime_Init
             'az-list' => __('Busqueda de la A-Z', 'kiranime'),
             'homepage' => __('Inicio', 'kiranime'),
             'news' => __('Noticias', 'kiranime'),
+            'latino' => __('Latino', 'kiranime'),
+            'haniyae' => __('H-Aniyae - Hentai Sin Censura', 'kiranime'),
         ];
 
         foreach ($pages as $page_template => $page_name) {

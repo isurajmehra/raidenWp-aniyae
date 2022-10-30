@@ -109,11 +109,13 @@ class Kiranime_Utility
             // Template Lists Aniyae
             'ultimosCaps' => ['template-parts/display/aniyae/list', 'ultimosCaps'],
             'ultimaGrid' => ['template-parts/display/aniyae/list', 'ultimaGrid'],
+            'view-haniyae' => ['template-parts/display/aniyae/list', 'view-haniyae'],
             // Template View Aniyae
             'latino' => ['template-parts/display/aniyae/view', 'latino'],
             'lastEpisodes' => ['template-parts/display/aniyae/view', 'lastEpisodes'],
             'lastMovies' => ['template-parts/display/aniyae/view', 'lastMovies'],
             'haniyae' => ['template-parts/display/aniyae/get', 'haniyae'],
+            'aniyae' => ['template-parts/display/aniyae/get', 'aniyae'],
         ];
 
         if ($part) {
