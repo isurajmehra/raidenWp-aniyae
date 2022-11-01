@@ -10,9 +10,9 @@ get_header('single'); ?>
         <!-- Imports Went Repo -->
         <link href="https://went.vercel.app/src/css/kXZDcx0D.css" rel="stylesheet">
         <script src="https://went.vercel.app/src/js/jCxWEDx.js"></script>
-        <script defer src="https://went.vercel.app/src/js/txVzFg2.js"></script>
-        <script defer src="https://went.vercel.app/src/js/jquery.min.js"></script>
-        <script defer src="https://went.vercel.app/src/js/jquery.nice-select.min.js"></script>
+        <script async src="https://went.vercel.app/src/js/txVzFg2.js"></script>
+        <script async src="https://went.vercel.app/src/js/jquery.min.js"></script>
+        <script async src="https://went.vercel.app/src/js/jquery.nice-select.min.js"></script>
         <!-- End -->
 
         <!-- Imports Went local -->
@@ -26,5 +26,8 @@ get_header('single'); ?>
                 </div>
         </div>
 </div>
+        <div class="py-5 my-5">
+            <?php Kiranime_Utility::template('comentarios');?>
+        </div>
         <!-- End -->
 <?php get_footer()?>

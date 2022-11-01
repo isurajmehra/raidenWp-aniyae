@@ -122,7 +122,7 @@ const visit_anime_id = <?php echo get_the_ID(); ?>;
                         <path fill="currentColor"
                             d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z" />
                     </svg>
-                    <?php _e('Watch Now', 'kiranime');?>
+                    <?php _e('Ver ya!', 'kiranime');?>
                 </a>
                 <span data-anime-tippy-add-list="<?php the_ID()?>"
                     class="flex items-center gap-1 text-base justify-center md:justify-start px-5 cursor-pointer py-2 text-gray-900 bg-white rounded-full">
@@ -130,7 +130,7 @@ const visit_anime_id = <?php echo get_the_ID(); ?>;
                         <path fill="currentColor"
                             d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z" />
                     </svg>
-                    <?php _e('Add to List', 'kiranime');?>
+                    <?php _e('Guardar', 'kiranime');?>
                 </span>
                 <div data-anime-tippy-content="<?php the_ID()?>" class="w-max h-auto bg-overlay shadow-md rounded-md">
                     <?php $lists = Kiranime_Watchlist::get_types();?>
@@ -148,11 +148,11 @@ const visit_anime_id = <?php echo get_the_ID(); ?>;
                 </div>
                 <?php if (strlen($content) > 280): ?>
                 <span data-more-less data-ismore="true" class="font-medium cursor-pointer">+
-                    <?php _e('More', 'kiranime')?></span>
+                    <?php _e('Mas', 'kiranime')?></span>
                 <?php endif;?>
                 <div class="mt-5">
-                    <?php printf(esc_html__('%1$s is the best site to watch %2$s SUB online, or you
-                    can even watch %2$s DUB in HD quality', 'kiranime'), get_bloginfo('name'), get_the_title(), get_the_title());?>
+                    <?php printf(esc_html__('%1$s Es un buen sitio para ver anime %2$s subtitulado online, o incluso 
+                    ver %2$s doblado en la mejor calidad HD disponible.', 'kiranime'), get_bloginfo('name'), get_the_title(), get_the_title());?>
                 </div>
             </div>
             <?php if (get_theme_mod('__show_share_button', 'show') === 'show'): ?>
@@ -215,12 +215,7 @@ const visit_anime_id = <?php echo get_the_ID(); ?>;
         </section>
         <!-- Start comments -->
         <div class="py-5 my-5">
-            <?php
-// If comments are open or we have at least one comment, load up the comment template.
-if (comments_open() || get_comments_number()):
-    comments_template();
-endif;
-?>
+            <?php Kiranime_Utility::template('comentarios');?>
         </div>
         <!-- end comments -->
         <?php if (get_theme_mod('__show_related_anime', 'show') === 'show'): ?>

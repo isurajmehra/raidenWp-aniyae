@@ -38,12 +38,7 @@
             </main>
         </article>
         <div class="my-10">
-            <?php
-// If comments are open or we have at least one comment, load up the comment template.
-if (comments_open() || get_comments_number()):
-    comments_template();
-endif;
-?>
+            <?php Kiranime_Utility::template('comentarios');?>
         </div>
     </main>
     <aside class="w-full lg:w-1/4 mt-10 lg:mt-0 px-2 lg:px-0">

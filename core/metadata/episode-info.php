@@ -228,7 +228,7 @@ players = players && typeof players === 'string' ? JSON.parse(players) : players
     </div>
     <button data-add-player
         class="outline-none col-span-7 sm:col-span-1 border-none bg-accent-3 text-white rounded-sm px-2 py-1 font-medium text-sm">
-        Reproductor
+        Player
     </button>
 </div>
 <template id="player-fields">
@@ -253,8 +253,8 @@ players = players && typeof players === 'string' ? JSON.parse(players) : players
             <option value="web3">Web3</option>
         </select>
         <button data-remove-player
-            class="outline-none col-span-full lg:col-span-1 border-none bg-error text-white rounded-sm px-2 py-2">
-            Eliminar
+            class="outline-none col-span-full lg:col-span-1 border-none bg-accent-3 text-white rounded-sm px-2 py-2">
+            Del
         </button>
         <input type="text" data-subtype-url name="player_url"
             class="col-span-full lg:col-span-7 py-2 px-1 outline-none border-0 border-b border-slate-300 text-sm font-medium focus:border-0 focus:outline-none border-l"

@@ -45,7 +45,15 @@
                 <path fill="currentColor"
                     d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z" />
             </svg>
-            <?php _e('Cerrar menú', 'kiranime')?>
+            <?php _e('Cerrar', 'kiranime')?>
+        </div>
+        <div class="flex">
+            <a href="/advanced-search" class="cursor-pointer px-4 py-2 rounded-md w-max max-w-max flex items-center gap-3 bg-white bg-opacity-20 font-medium text-sm my-5 mx-3 hover:bg-sky-700 ">Archivo</a>
+            <a href="/haniyae" class="cursor-pointer px-4 py-2 rounded-md w-max max-w-max flex items-center gap-3 bg-white bg-opacity-20 font-medium text-sm my-5 mx-3 hover:bg-sky-700 ">Haniyae +18</a>
+        </div>
+        <div class="flex">
+            <a href="/horarios" class="cursor-pointer px-4 py-2 rounded-md w-max max-w-max flex items-center gap-3 bg-white bg-opacity-20 font-medium text-sm my-5 mx-3 hover:bg-sky-700 ">Calendary</a>
+            <a href="/contact" class="cursor-pointer px-4 py-2 rounded-md w-max max-w-max flex items-center gap-3 bg-white bg-opacity-20 font-medium text-sm my-5 mx-3 hover:bg-sky-700 ">Contacto</a>
         </div>
         <div class="mt-5 min-h-full">
             <?php if (has_nav_menu('header_side')): wp_nav_menu([
@@ -53,7 +61,7 @@
                 'container_class' => 'w-full',
                 'menu_class' => 'flex flex-col text-sm p-0 m-0',
                 ]);endif?>
-                    <div class="mt-5 border-t border-secondary">
+            <div class="mt-5 border-t border-secondary">
                 <?php get_template_part('template-parts/component/list', 'genre');?>
             </div>
         </div>

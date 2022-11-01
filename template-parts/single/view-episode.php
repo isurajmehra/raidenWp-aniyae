@@ -243,12 +243,7 @@ wp_add_inline_script('kiranime-vendors', $data_inline, 'before');
         <?php endif;?>
         <!-- Start comments -->
         <div class="py-5 my-5">
-            <?php
-// If comments are open or we have at least one comment, load up the comment template.
-if (comments_open() || get_comments_number()):
-    comments_template();
-endif;
-?>
+            <?php Kiranime_Utility::template('comentarios');?>
         </div>
         <!-- end comments -->
         <!-- Start Recomended Anime -->

@@ -51,7 +51,7 @@ $advanced_search_url = Kiranime_Utility::page_slug('pages/advanced-search.php');
                     </div>
                     <a data-search-view-all href="/<?=$advanced_search_url?>"
                         class="flex items-center justify-center w-full p-4 bg-accent-3 text-base">
-                        <?php _e('Ver todos los resultados', 'kiranime');?> <svg xmlns="http://www.w3.org/2000/svg"
+                        <?php _e('Buscar', 'kiranime');?> <svg xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 256 512" class="w-4 h-4 ml-2 inline-block">
                             <path fill="currentColor"
                                 d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />
@@ -73,6 +73,11 @@ $advanced_search_url = Kiranime_Utility::page_slug('pages/advanced-search.php');
 						                </a>
 						            </div>
 						            <?php endif;endforeach;endif;?>
+            <div class="flex">
+                <a href="/advanced-search" class="cursor-pointer px-4 py-2 rounded-md w-max max-w-max flex items-center gap-3 bg-white bg-opacity-20 font-medium text-sm my-5 mx-3 hover:bg-sky-700 ">Archivo</a>
+                <a href="/haniyae" class="cursor-pointer px-4 py-2 rounded-md w-max max-w-max flex items-center gap-3 bg-white bg-opacity-20 font-medium text-sm my-5 mx-3 hover:bg-sky-700 ">Haniyae +18</a>
+                <a href="/sugest" class="cursor-pointer px-4 py-2 rounded-md w-max max-w-max flex items-center gap-3 bg-white bg-opacity-20 font-medium text-sm my-5 mx-3 hover:bg-sky-700 ">Petición</a>
+            </div>
         </div>
     </div>
     <?php if (!is_user_logged_in()) {?>

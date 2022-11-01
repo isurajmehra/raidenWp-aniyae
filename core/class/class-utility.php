@@ -120,6 +120,7 @@ class Kiranime_Utility
             'calendary' => ['template-parts/display/aniyae/get', 'calendary'],
             'calendary2' => ['template-parts/display/aniyae/get', 'calendary2'],
             'lastEpisodes2' => ['template-parts/display/aniyae/view', 'lastEpisodes2'],
+            'comentarios' => ['template-parts/display/aniyae/get', 'comments'],
         ];
 
         if ($part) {

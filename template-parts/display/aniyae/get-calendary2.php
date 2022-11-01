@@ -259,7 +259,7 @@
 
     </div>
 </div>
-<script src="https://went.vercel.app/src/js/Yenwent.js"></script>
+<script async src="https://went.vercel.app/src/js/Yenwent.js"></script>
 </section>
     </div>
   </div>
