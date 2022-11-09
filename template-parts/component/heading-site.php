@@ -9,7 +9,7 @@ $uif = get_userdata($uid);?>
                     d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" />
             </svg>
         </div>
-        <a href="/" id="logo" class="md:ml-16 ml-8 mr-8 block">
+        <a href="/" id="logo" class="ml-8 mr-8 block">
             <?php if (get_theme_mod('custom_logo')) {
     ?>
             <img style="width: 150px;" src="<?php $image = wp_get_attachment_image_src(get_theme_mod('custom_logo'), 'full');

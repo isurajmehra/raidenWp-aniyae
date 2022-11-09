@@ -40,7 +40,7 @@ const visit_anime_id = <?php echo get_the_ID(); ?>;
                 <ol class="flex gap-2 items-center flex-wrap">
                     <li>
                         <a href="/">
-                            <?php _e('Home', 'kiranime')?>
+                            <?php _e('Inicio', 'kiranime')?>
                         </a>
                     </li>
                     <li>
@@ -63,9 +63,9 @@ const visit_anime_id = <?php echo get_the_ID(); ?>;
                     </li>
                 </ol>
             </nav>
-            <h2 class="text-4xl leading-tight font-medium mb-5">
+            <h1 class="text-4xl leading-tight font-medium mb-5">
                 <?php the_title();?>
-            </h2>
+            </h1>
             <ul class="flex items-center justify-center sm:justify-start gap-2 mb-7 text-sm">
                 <li class="space-x-1 text-xs">
                     <?php if ($meta['rate']): ?>

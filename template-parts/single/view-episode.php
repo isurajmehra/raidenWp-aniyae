@@ -40,7 +40,7 @@ wp_add_inline_script('kiranime-vendors', $data_inline, 'before');
                 <ol class="flex gap-2 items-center flex-wrap">
                     <li>
                         <a href="/">
-                            <?php _e('Home', 'kiranime');?>
+                            <?php _e('Inicio', 'kiranime');?>
                         </a>
                     </li>
                     <li>
@@ -251,9 +251,9 @@ wp_add_inline_script('kiranime-vendors', $data_inline, 'before');
         <section>
             <div class="w-full mb-4 flex items-center justify-between mt-10 px-4 md:px-0">
                 <div class="mr-4">
-                    <h2 class="text-2xl leading-10 font-semibold p-0 m-0 text-sky-400">
+                    <h1 class="text-2xl leading-10 font-semibold p-0 m-0 text-sky-400">
                         <?php $title = get_theme_mod('__show_episode_related_label');if ($title) {echo $title;} else {_e('Similares a este!', 'kiranime');}?>
-                    </h2>
+                    </h1>
                 </div>
             </div>
 

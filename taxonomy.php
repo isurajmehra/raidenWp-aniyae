@@ -27,10 +27,8 @@ if ($animes->post_count === 0) {
 ?>
 <div class="mb-17 grid grid-cols-12 px-4 mx-auto w-full gap-5">
     <section class="col-span-full <?php if ($sidebar_active) {echo 'lg:col-span-9';}?>">
-        <h3 class="mb-4 text-2xl font-semibold leading-10 text-sky-400"><?php echo ucfirst($current->name) ?>
-        </h3>
-        <div
-            class="grid grid-cols-2 <?php if ($sidebar_active): echo 'md:grid-cols-4 xl:grid-cols-6';else:echo 'md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 xxl:grid-cols-7';endif;?> gap-4">
+        <h1 class="mb-4 text-2xl font-semibold leading-10 text-sky-400"><?php echo ucfirst($current->name) ?></h1>
+        <div class="grid grid-cols-2 <?php if ($sidebar_active): echo 'md:grid-cols-4 xl:grid-cols-6';else:echo 'md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 xxl:grid-cols-7';endif;?> gap-4">
             <?php if ($animes->have_posts()): while ($animes->have_posts()): $animes->the_post();
         ?>
 		            <div class="col-span-1">

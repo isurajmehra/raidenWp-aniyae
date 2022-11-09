@@ -194,7 +194,7 @@ class Kiranime_Query
     public function haniyae()
     {
         $this->base['posts_per_page'] = $this->archive ? get_option('__archive_count', 20) : 12;
-        $this->base['orderby'] = 'rand';
+        $this->base['meta_key'] = 'kiranime_anime_updated';
         $this->base['tax_query'] = [
             [
                 'taxonomy' => 'type',

@@ -1,9 +1,7 @@
 <!-- Start Ads 1 -->
-<?php if (get_theme_mod('__ads_after_trending')) {?>
 <div class="container flex items-center justify-center max-w-full h-auto my-5">
-    <?php echo get_theme_mod('__ads_after_trending') ?>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9500151085329576"  crossorigin="anonymous"></script> <!-- Unidad de prueba --> <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9500151085329576" data-ad-slot="3209437212" data-ad-format="auto" data-full-width-responsive="true"></ins> <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>
 </div>
-<?php }?>
 <!-- End Ads -->
 <div class="lg:flex justify-between md:px-5 gap-5 sm:px-4">
     <section class="lg:w-9/12 ml-2 mr-2 mb-8">
@@ -20,11 +18,9 @@
             <!-- End Ultimos caps list -->
     </aside>
 </div>
-<?php $afe = get_theme_mod('__ads_after_featured');if ($afe): ?>
 <div class="container flex items-center justify-center max-w-full h-auto my-5">
-    <?php echo $afe ?>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9500151085329576"  crossorigin="anonymous"></script> <!-- Unidad de prueba --> <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9500151085329576" data-ad-slot="3209437212" data-ad-format="auto" data-full-width-responsive="true"></ins> <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>
 </div>
-<?php endif;?>
 <!-- End Featured -->
 
 <div class="lg:flex justify-between md:px-5 gap-5 sm:px-4">

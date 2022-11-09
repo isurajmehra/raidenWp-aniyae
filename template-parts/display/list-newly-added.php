@@ -1,8 +1,8 @@
 <div class="w-full mb-4 flex items-center justify-between mt-10 px-4 sm:px-0">
     <div class="mr-4">
-        <h2 class="text-2xl leading-10 font-semibold p-0 m-0 text-sky-400">
+        <h1 class="text-2xl leading-10 font-semibold p-0 m-0 text-sky-400">
             <?php $title = get_theme_mod('__show_new_label');if ($title) {echo $title;} else {_e('Nuevos en Aniyae', 'kiranime');}?>
-        </h2>
+        </h1>
     </div>
     <div class="text-sm font-normal text-opacity-75">
         <a class="px-4 py-2 rounded-full w-max max-w-max flex items-center gap-3 bg-accent-3 font-medium text-sm my-5 mx-3" href="<?=Kiranime_Utility::page_url('pages/recent-add.php');?>">
