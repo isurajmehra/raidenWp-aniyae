@@ -18,7 +18,7 @@
     class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-6 gap-2 sm:gap-4 lg:gap-5 justify-evenly w-full flex-auto">
     <?php
 $latino_animes = new Kiranime_Query();
-$latino_animes = $latino_animes->latino();
+$latino_animes = $latino_animes->latino2();
 if ($latino_animes->have_posts()):
     while ($latino_animes->have_posts()):
         $latino_animes->the_post();
