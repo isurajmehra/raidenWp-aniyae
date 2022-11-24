@@ -1,6 +1,6 @@
 # ✓ RaidenWp - Aniyae
 
-> Una nueva version del tema principal de produccion de aniyae.net, creado originalmente por Kiranime y adaptado para el sitio aniyae.
+> Una nueva version del tema principal en produccion de aniyae.net, creado originalmente por Kiranime y adaptado para el sitio aniyae.
 
 ## 📦 Installation
 ```Commands
