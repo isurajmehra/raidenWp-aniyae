@@ -221,6 +221,21 @@ class Kiranime_Query
         return new WP_Query($this->base);
     }
 
+    public function haniyae2()
+    {
+        $this->base['posts_per_page'] = $this->archive ? get_option('__archive_count', 20) : 12;
+        $this->base['meta_key'] = 'rand';
+        $this->base['tax_query'] = [
+            [
+                'taxonomy' => 'type',
+                'field' => 'slug',
+                'terms' => ['animeh'],
+            ],
+        ];
+
+        return new WP_Query($this->base);
+    }
+
     public function mitico()
     {
         $this->base['posts_per_page'] = $this->archive ? get_option('__archive_count', 20) : 8;

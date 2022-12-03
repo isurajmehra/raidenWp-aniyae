@@ -34,7 +34,7 @@
         <section class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-6 gap-2 sm:gap-4 lg:gap-5 justify-evenly w-full flex-auto">
             <?php
                 $new_animes = new Kiranime_Query();
-                $new_animes = $new_animes->haniyae();
+                $new_animes = $new_animes->haniyae2();
                     if ($new_animes->have_posts()):
                 while ($new_animes->have_posts()):
                 $new_animes->the_post();
