@@ -6,7 +6,7 @@
                 <ol class="flex gap-2 items-center flex-wrap">
                     <li>
                         <a href="/">
-                            <?php _e('Home', 'kiranime');?>
+                            <?php _e('Inicio', 'kiranime');?>
                         </a>
                     </li>
                     <li>
@@ -14,7 +14,7 @@
                     </li>
                     <li>
                         <a href="<?=Kiranime_Utility::page_url('pages/news.php');?>">
-                            <?php _e('News', 'kiranime');?>
+                            <?php _e('Noticias', 'kiranime');?>
                         </a>
                     </li>
                     <li>
@@ -28,6 +28,9 @@
                 </ol>
             </nav>
         </section>
+        <!-- Ads Native 1 -->
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9500151085329576" crossorigin="anonymous"></script> <!-- Unidad de prueba --> <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9500151085329576" data-ad-slot="3209437212" data-ad-format="auto" data-full-width-responsive="true"></ins> <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>
+        <!-- Ads end Native 1 -->
         <article class="w-full">
             <h2 class="text-4xl font-semibold"><?php the_title()?></h2>
             <span class="inline-block mb-5 font-medium text-sm">

@@ -1,8 +1,3 @@
-<!-- Start Ads 1 -->
-<div class="container flex items-center justify-center max-w-full h-auto my-5">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9500151085329576"  crossorigin="anonymous"></script> <!-- Unidad de prueba --> <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9500151085329576" data-ad-slot="3209437212" data-ad-format="auto" data-full-width-responsive="true"></ins> <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>
-</div>
-<!-- End Ads -->
 <div class="lg:flex justify-between md:px-5 gap-5 sm:px-4">
     <section class="lg:w-9/12 ml-2 mr-2 mb-8">
         <!-- Spotlight start -->
@@ -18,10 +13,9 @@
             <!-- End Ultimos caps list -->
     </aside>
 </div>
-<div class="container flex items-center justify-center max-w-full h-auto my-5">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9500151085329576"  crossorigin="anonymous"></script> <!-- Unidad de prueba --> <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9500151085329576" data-ad-slot="3209437212" data-ad-format="auto" data-full-width-responsive="true"></ins> <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>
-</div>
-<!-- End Featured -->
+        <!-- Ads Native 1 -->
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9500151085329576" crossorigin="anonymous"></script> <!-- Unidad de prueba --> <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9500151085329576" data-ad-slot="3209437212" data-ad-format="auto" data-full-width-responsive="true"></ins> <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>
+        <!-- Ads end Native 1 -->
 
 <div class="lg:flex justify-between md:px-5 gap-5 sm:px-4">
     <section class="lg:w-9/12 ml-2 mr-2 mb-8">
@@ -52,13 +46,13 @@ $show_sidebar = get_theme_mod('__show_sidebar', 'show');
         <!-- Haniyae -->
         <?php Kiranime_Utility::template('lastMovies');?>
         <!-- End Haniyae -->
-        <!-- Upcomming Anime -->
-        <?php Kiranime_Utility::template('haniyae');?>
-        <!-- End Upcomming Anime -->
     </section>
     <aside class="w-full <?=$show_sidebar === 'show' ? 'lg:w-3/12' : 'hidden';?> flex-shrink-0 min-h-300 pr-5 mt-10">
                 <!-- Sidebar -->
                 <?php if (is_active_sidebar('homepage-sidebar')): dynamic_sidebar('homepage-sidebar');endif;?>
             <!-- End Sidebar -->
     </aside>
+        <!-- Ads Native 1 -->
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9500151085329576" crossorigin="anonymous"></script> <!-- Unidad de prueba --> <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9500151085329576" data-ad-slot="3209437212" data-ad-format="auto" data-full-width-responsive="true"></ins> <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>
+        <!-- Ads end Native 1 -->
 </div>
