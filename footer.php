@@ -84,6 +84,10 @@ foreach ($alphabet as $key => $value) {
             Analitica</p>
     </div>
 </div>
+<!-- Ads start -->
+<script type='text/javascript' src='//pl17592734.highperformancecpmgate.com/00/8f/4f/008f4ff556fb433f90ff83fd9220b616.js'></script>
+<script data-cfasync="false" type="text/javascript" src="//onclickprediction.com/a/display.php?r=6457226"></script>
+<!-- End Ads -->
 <script id="chatBroEmbedCode">/* Chatbro Widget Embed Code Start */function ChatbroLoader(chats,async){async=!1!==async;var params={embedChatsParameters:chats instanceof Array?chats:[chats],lang:navigator.language||navigator.userLanguage,needLoadCode:'undefined'==typeof Chatbro,embedParamsVersion:localStorage.embedParamsVersion,chatbroScriptVersion:localStorage.chatbroScriptVersion},xhr=new XMLHttpRequest;xhr.withCredentials=!0,xhr.onload=function(){eval(xhr.responseText)},xhr.onerror=function(){console.error('Chatbro loading error')},xhr.open('GET','https://www.chatbro.com/embed.js?'+btoa(unescape(encodeURIComponent(JSON.stringify(params)))),async),xhr.send()}/* Chatbro Widget Embed Code End */ChatbroLoader({encodedChatId: '38ifi'});</script>
 <?php wp_footer();?>
 </body>

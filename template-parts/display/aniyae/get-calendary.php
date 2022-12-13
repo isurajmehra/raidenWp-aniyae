@@ -258,7 +258,7 @@
 
     </div>
 </div>
-<script async src="https://went.vercel.app/src/js/Yenwent.js"></script>
+<script async src="https://aria.js.cdn.aniyae.net/js/Yenwent.js"></script>
 </section>
     </div>
   </div>

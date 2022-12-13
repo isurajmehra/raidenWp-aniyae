@@ -41,19 +41,19 @@ $type = Kiranime_Utility::get_taxonomy(get_the_ID(), 'type');
         </a>
     </div>
 
-    <div style="min-height: 10rem" class="flex h-auto flex-col justify-between p-2 bg-overlay">
-        <!-- Title -->
-        <a href="<?php the_permalink();?>" class="text-sm line-clamp-2 font-medium leading-snug lg:leading-normal">
-            <?php the_title()?>
-        </a>
-        <div class="text-xs text-white text-opacity-75 line-clamp-3 my-2">
-            <?php the_content()?>
+        <div style="min-height: 10rem" class="flex h-auto flex-col justify-between p-2 bg-overlay">
+            <!-- Title -->
+            <a href="<?php the_permalink();?>" class="text-sm line-clamp-2 font-medium leading-snug lg:leading-normal">
+                <?php the_title()?>
+            </a>
+            <div class="text-xs text-white text-opacity-75 line-clamp-3 my-2">
+                <?php the_content()?>
+            </div>
+            <!-- type and length -->
+            <div class="text-xs text-white w-full line-clamp-1 py-1 sm:py-0 md:my-auto text-opacity-75">
+                <span class="inline-block md:my-3"><?=isset($type[0]) ? $type[0]->name : 'TV';?></span>
+                <span class="inline-block bg-gray-600 w-1 h-1 mx-2"></span>
+                <span class="inline-block md:my-3"><?=isset($meta['duration']) ? $meta['duration'] : '24m'?></span>
+            </div>
         </div>
-        <!-- type and length -->
-        <div class="text-xs text-white w-full line-clamp-1 py-1 sm:py-0 md:my-auto text-opacity-75">
-            <span class="inline-block md:my-3"><?=isset($type[0]) ? $type[0]->name : 'TV';?></span>
-            <span class="inline-block bg-gray-600 w-1 h-1 mx-2"></span>
-            <span class="inline-block md:my-3"><?=isset($meta['duration']) ? $meta['duration'] : '24m'?></span>
-        </div>
-    </div>
 </div>

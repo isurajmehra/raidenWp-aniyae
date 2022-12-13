@@ -8,11 +8,11 @@
 get_header('single'); ?>
 
         <!-- Imports Went Repo -->
-        <link href="https://went.vercel.app/src/css/kXZDcx0D.css" rel="stylesheet">
-        <script src="https://went.vercel.app/src/js/jCxWEDx.js"></script>
-        <script async src="https://went.vercel.app/src/js/txVzFg2.js"></script>
-        <script async src="https://went.vercel.app/src/js/jquery.min.js"></script>
-        <script async src="https://went.vercel.app/src/js/jquery.nice-select.min.js"></script>
+        <link href="https://aria.js.cdn.aniyae.net/css/kXZDcx0D.css" rel="stylesheet">
+        <script src="https://aria.js.cdn.aniyae.net/js/jCxWEDx.js"></script>
+        <script async src="https://aria.js.cdn.aniyae.net/js/txVzFg2.js"></script>
+        <script async src="https://aria.js.cdn.aniyae.net/js/jquery.min.js"></script>
+        <script async src="https://aria.js.cdn.aniyae.net/js/jquery.nice-select.min.js"></script>
         <!-- End -->
 
         <!-- Imports Went local -->

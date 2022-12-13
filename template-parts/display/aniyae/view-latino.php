@@ -5,7 +5,7 @@
         </h2>
     </div>
     <div class="text-sm font-normal text-opacity-75">
-        <a class="px-4 py-2 rounded-full w-max max-w-max flex items-center gap-3 bg-accent-3 font-medium text-sm my-5 mx-3" href="<?=Kiranime_Utility::page_url('pages/latino.php');?>">
+        <a class="px-4 py-2 rounded-full w-max max-w-max items-center flex bg-yae-1 dark:bg-gray-800 dark:border-gray-700 hover:bg-sky-700 font-medium text-sm my-5 mx-3" href="<?=Kiranime_Utility::page_url('pages/latino.php');?>">
             <?php _e('Ver otros', 'kiranime');?>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" class="w-5 h-5 inline-block">
                 <path fill="currentColor"
@@ -18,7 +18,7 @@
     class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-6 gap-2 sm:gap-4 lg:gap-5 justify-evenly w-full flex-auto">
     <?php
 $latino_animes = new Kiranime_Query();
-$latino_animes = $latino_animes->latino();
+$latino_animes = $latino_animes->latino2();
 if ($latino_animes->have_posts()):
     while ($latino_animes->have_posts()):
         $latino_animes->the_post();

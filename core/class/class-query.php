@@ -179,6 +179,21 @@ class Kiranime_Query
     public function latino()
     {
         $this->base['posts_per_page'] = $this->archive ? get_option('__archive_count', 20) : 8;
+        $this->base['orderby'] = 'kiranime_anime_updated';
+        $this->base['tax_query'] = [
+            [
+                'taxonomy' => 'anime_attribute',
+                'field' => 'slug',
+                'terms' => ['latino'],
+            ],
+        ];
+
+        return new WP_Query($this->base);
+    }
+
+    public function latino2()
+    {
+        $this->base['posts_per_page'] = $this->archive ? get_option('__archive_count', 20) : 8;
         $this->base['orderby'] = 'rand';
         $this->base['tax_query'] = [
             [
@@ -195,6 +210,21 @@ class Kiranime_Query
     {
         $this->base['posts_per_page'] = $this->archive ? get_option('__archive_count', 20) : 12;
         $this->base['meta_key'] = 'kiranime_anime_updated';
+        $this->base['tax_query'] = [
+            [
+                'taxonomy' => 'type',
+                'field' => 'slug',
+                'terms' => ['animeh'],
+            ],
+        ];
+
+        return new WP_Query($this->base);
+    }
+
+    public function haniyae2()
+    {
+        $this->base['posts_per_page'] = $this->archive ? get_option('__archive_count', 20) : 12;
+        $this->base['meta_key'] = 'rand';
         $this->base['tax_query'] = [
             [
                 'taxonomy' => 'type',

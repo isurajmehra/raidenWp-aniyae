@@ -5,7 +5,7 @@
         </h1>
     </div>
     <div class="text-sm font-normal text-opacity-75">
-        <a class="px-4 py-2 rounded-full w-max max-w-max flex items-center gap-3 bg-accent-3 font-medium text-sm my-5 mx-3" href="<?=Kiranime_Utility::page_url('pages/recent-add.php');?>">
+        <a class="px-4 py-2 rounded-full w-max max-w-max items-center flex bg-yae-1 dark:bg-gray-800 dark:border-gray-700 hover:bg-sky-700 font-medium text-sm my-5 mx-3" href="<?=Kiranime_Utility::page_url('pages/recent-add.php');?>">
             <?php _e('Ver otros', 'kiranime');?>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" class="w-5 h-5 inline-block">
                 <path fill="currentColor"
